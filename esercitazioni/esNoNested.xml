@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<noNested>
+    <nested>
+        questo elemento è annidato correttamente? <!-- sì -->
+    </nested>
+    <sbagliato>
+        <error>
+    </sbagliato>
+        qui sono presenti più gerarchie non rigorosamente annidate
+        </error> <!-- fenomeno di overlap -->
+</noNested>
