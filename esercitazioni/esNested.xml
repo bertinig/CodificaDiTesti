@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<nested>  
+    <giusto>
+        <noError>
+            <!-- adesso le gerarchie sono rigorosamente annidate -->
+        </noError>
+        <figlio>
+            <!-- es: aggiungere un figlio a un elem -->
+        </figlio>
+    </giusto>
+    <fratello>
+            <!-- es: aggiungere un fratello a un elem -->
+    </fratello>
+</nested>
