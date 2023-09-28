@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE TEI [
+    <!ELEMENT TEI (header, facsimile?, text+)>
+    <!ELEMENT header (#PCDATA)>
+    <!ELEMENT facsimile (#PCDATA)>
+    <!ELEMENT text (#PCDATA)>
+    ]>
+<TEI>
+   <header>
+        Quando non c'è nessun segno significa che è obbligatorio una occorrenza
+   </header> 
+   <facsimile>
+        Il ? significa che può esserci una volta, ma non è obbligatorio
+   </facsimile>
+   <text>
+        Il + significa che l'elemento è presente almeno una volta
+   </text>
+   <text>
+        Ma può essere presente anche due o più volte
+   </text>
+</TEI>
+
+<!-- ESERCIZIO
+Includere all’interno di un documento XML la dichiarazione del tipo, 
+definire internamente gli elementi e gli attributi e validare. -->

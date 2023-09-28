@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TEI type="doc">
+    <codHTML>
+        <![CDATA[
+            <h1>Qui ci va il titolo</h1>
+            <p>Qui ci va il testo</p>
+        ]]>
+    </codHTML>
+    <codiceXML>
+    </codiceXML>
+</TEI>
+<!-- ESERCIZIO 
+Inserire all'interno di un tag un frammento di codice HTML -->

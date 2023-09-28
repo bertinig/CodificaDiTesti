@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE TEI SYSTEM "esDTD2.dtd">
+<TEI>
+    <header type="intestazione"> <!-- occorrenza: obbligatoria -->
+        Questa è l'intestazione del doc.
+    </header> <!-- l'attributo lang è opzionale -->
+    <facsimile source="unipi.it"> <!-- occorrenza: zero o una -->
+    </facsimile> <!-- l'attr. ref è opzionale -->
+    <testo id="123" type="user"> <!-- occorrenza: una o più volte -->
+        Questa è una <seg>prova</seg> per inserire il tag <seg>seg.</seg>
+    </testo> <!-- l'attr. type era opzionale -->
+</TEI>
+
+
+<!-- ESERCIZIO 
+Inserire nel prologo di un documento XML la dichiarazione
+del tipo di documento e validare. -->
