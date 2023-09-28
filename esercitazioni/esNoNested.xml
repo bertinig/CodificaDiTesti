@@ -9,3 +9,6 @@
         qui sono presenti più gerarchie non rigorosamente annidate
         </error> <!-- fenomeno di overlap -->
 </noNested>
+
+<!-- ESERCIZIO
+Scrivere e fare il check di un xml non opportunamente annidato -->
