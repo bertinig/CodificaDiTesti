@@ -12,3 +12,8 @@
             <!-- es: aggiungere un fratello a un elem -->
     </fratello>
 </nested>
+
+<!-- ESERCIZIO
+Correggere il file non opportunamente annidato, commentando gli errori e le modifiche
+Aggiungere un figlio (child) ad un elemento
+Aggiungere un fratello (sibling) ad un elemento -->
