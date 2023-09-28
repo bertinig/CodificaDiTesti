@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0"> 
+<teiHeader xml-lang="it">
+    <fileDesc>
+        <titleStmt>
+            <title>Moglie e amante</title>
+            <respStmt>
+                <resp>Conversione TEI P5 a cura di</resp>
+                <name>Giulia Bertini</name>
+            </respStmt>
+        </titleStmt>
+        <publicationStmt>
+            <publisher>Università di Pisa</publisher>
+            <date>28/09/23</date>
+            <avaibility>Disponbile<!-- dove? --></avaibility>
+        </publicationStmt>
+        <sourceDesc>
+            <bibl>
+                <title>La coscienza di Zeno</title>
+                <author>Italo Svevo</author>
+                <publisher>Einaudi</publisher>
+                <date>1976</date>
+            </bibl>
+        </sourceDesc>
+    </fileDesc>
+</teiHeader>
+<text>
+    <body>
+        <div n="6" type="capitolo">
+            <pb n="166"/>
+            <head rend="italic">Italo Svevo - La coscienza di Zeno</head>
+            <head>6. MOGLIE E AMANTE</head>
+            <p>
+                <lb n="1"/>Nella mia vita ci furono varii periodi in cui credetti di
+                <lb n="2"/>essere avviato alla salute e alla felicità. Mai però tale fede
+                <lb n="3"/>fu tanto forte come nel tempo in cui durò il mio viaggio
+                <lb n="4"/>di nozze <distinct>eppoi</distinct> qualche settimana dopo il nostro ritorno
+                <lb n="5"/>a casa. Cominciò con una scoperta che mi stupí: io ama-
+                <lb n="6"/>vo Augusta com’essa amava me. Dapprima diffidente,
+                <lb n="7"/>godevo intanto di una giornata e m’aspettavo che la se-
+                <lb n="8"/>guente fosse tutt’altra cosa. Ma una seguiva e somigliava
+                <lb n="9"/>all’altra, luminosa, tutta gentilezza di <name>Augusta</name> ed anche
+                <lb n="10"/>– ciò ch’era la sorpresa – mia. Ogni mattina ritrovavo in
+                <lb n="11"/>lei lo stesso commosso affetto e in me la stessa ricono-
+                <lb n="12"/>scenza che, se non era amore, vi somigliava molto. Chi
+                <lb n="13"/>avrebbe potuto prevederlo quando avevo zoppicato da
+                <lb n="14"/><name>Ada</name> ad <name>Alberta</name> per arrivare ad <name>Augusta</name>? Scoprivo di es-
+                <lb n="15"/>sere stato non un bestione cieco diretto da altri, ma un
+                <lb n="16"/>uomo abilissimo. E vedendomi stupito, <name>Augusta</name> mi di-
+                <lb n="17"/>ceva:
+                <lb n="18"/><q>– Ma perché ti sorprendi? Non sapevi che il matrimo-
+                <lb n="19"/>nio è fatto cosí? Lo sapevo pur io che sono tanto piú
+                <lb n="20"/>ignorante di te!</q>
+            </p>
+            <p>
+                <lb n="21"/>Non so piú se dopo o prima dell’affetto, nel mio ani-
+                <lb n="22"/>mo si formò una speranza, la grande speranza di poter
+                <lb n="23"/>finire col somigliare ad <name>Augusta</name> ch’era la salute personi-
+                <lb n="24"/>ficata. Durante il fidanzamento io non avevo neppur in-
+                <lb n="25"/>travvista quella salute, perché tutto immerso a studiare
+                <lb n="26"/>me in primo luogo <distinct>eppoi</distinct> <name>Ada</name> e <name>Guido</name>. La lampada a
+                <lb n="27"/>petrolio in quel salotto non era mai arrivata ad illumina-
+                <lb n="28"/>re gli scarsi capelli di <name>Augusta</name>.
+            </p>
+            <p>
+                <lb n="29"/>Altro che il suo rossore! Quando questo sparve con la
+                <lb n="30"/>semplicità con cui i colori dell’aurora spariscono alla lu-
+                <lb n="31"/>ce diretta del sole, <name>Augusta</name> batté sicura la via per cui
+                <lb n="32"/>erano passate le sue sorelle su questa terra, quelle sorelle
+                <lb n="33"/>che possono trovare tutto nella legge e nell’ordine o che
+            <pb n="167"/>
+                <lb n="1"/>altrimenti a tutto rinunziano. Per quanto la sapessi mal
+                <lb n="2"/>fondata perché basata su di me, io amavo, io adoravo
+                <lb n="3"/>quella sicurezza. Di fronte ad essa io dovevo comportar-
+                <lb n="4"/>mi almeno con la modestia che usavo quando si trattava
+                <lb n="5"/>di <term>spiritismo</term>. Questo poteva essere e poteva perciò esi-
+                <lb n="6"/>stere anche la fede nella vita.
+            </p>
+            <p>
+                <lb n="7"/>Però mi sbalordiva; da ogni sua parola, da ogni suo
+                <lb n="8"/>atto risultava che in fondo essa credeva la vita eterna.
+                <lb n="9"/>Non che la dicessi tale: si sorprese anzi che una volta io,
+                <lb n="10"/>cui gli errori ripugnavano prima che non avessi amati i
+                <lb n="11"/>suoi, avessi sentito il bisogno di ricordargliene la bre-
+                <lb n="12"/>vità. Macché! Essa sapeva che tutti dovevano morire,
+                <lb n="13"/>ma ciò non toglieva che oramai ch’eravamo sposati, si
+                <lb n="14"/>sarebbe rimasti insieme, insieme, insieme. Essa dunque
+                <lb n="15"/>ignorava che quando a questo mondo ci si univa, ciò av-
+                <lb n="16"/>veniva per un periodo tanto breve, breve, breve, che
+                <lb n="17"/>non s’intendeva come si fosse arrivati a darsi del tu dopo
+                <lb n="18"/>di non essersi conosciuti per un tempo infinito e pronti
+                <lb n="19"/>a non rivedersi mai piú per un altro infinito tempo.
+                <lb n="20"/>Compresi finalmente che cosa fosse la perfetta salute
+                <lb n="21"/>umana quando indovinai che il presente per lei era una
+                <lb n="22"/>verità tangibile in cui si poteva segregarsi e starci caldi.
+                <lb n="23"/>Cercai di esservi ammesso e tentai di soggiornarvi riso-
+                <lb n="24"/>luto di non deridere me e lei, perché questo conato non
+                <lb n="25"/>poteva essere altro che la mia malattia ed io dovevo al-
+                <lb n="26"/>meno guardarmi dall’infettare chi a me s’era confidato.
+            </p>
+        </div>
+    </body>
+</text>
+</TEI>
+
+
+<!-- ESERCIZIO 
+Marcare un testo plain text di circa 3000 caratteri a piacere.
+    - inserire prologo XML
+    - marcare la struttura usando gli elementi fin qui descritti in
+    - particolare marcare tutti i paragrafi usando <p> e la
+    - struttura editoriale usando <div>
+    - verificare che sia ben formato con xmllint
+    - salvare il file XML su github -->     
