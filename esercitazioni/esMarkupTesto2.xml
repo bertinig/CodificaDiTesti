@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+
+<tei-c xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+    <fileDesc>
+        <titleStmt>
+            <title>EsMarkupTesto2.xml</title>
+            <respStmt>
+                <resp>Conversione TEI P5 a cura di</resp>
+                <name>Giulia Bertini</name>
+            </respStmt>
+        </titleStmt>
+        <publicationStmt>
+            <publisher>Università di Pisa</publisher>
+            <date>29/09/23</date>
+            <avaibility>Disponbile sul mio GitHub https://github.com/bertinig </avaibility>
+        </publicationStmt>
+        <sourceDesc>
+            <bibl>
+                <title>esercitazioni</title>
+                <author>Giulia Bertini</author>
+                <publisher>GitHub</publisher>
+                <date>2023</date>
+            </bibl>
+        </sourceDesc>
+    </fileDesc>
+</teiHeader>
+<text>
+    <p>
+        Questo testo lo sto creando io per svolgere un esercizio della quinta lezione di <term>Codifica di Testi</term>.
+        Codifica di Testi è uno degli esami obbligatori del <term>Corso di Laurea</term> di Informatica Umanistica.
+    </p>
+    <p>
+        Per codifica del testo <gloss>s'intende la rappresentazione digitale di un testo.</gloss>
+    </p>
+    <p> 
+        Il corso è tenuto dal professor <name>Del Grosso</name>, <note>docente esterno</note>, e le lezioni si svolgono a <rs typle="place">Pisa</rs>, <rs type="place">al polo Fibonacci</rs>.
+        Per chi è interessato può, tramite questo <ptr target="https://elearning22.humnet.unipi.it/course/view.php?id=396">link</ptr> 
+        accedere alla pagina <term>Moodle</term> del corso. 
+    </p>
+    <p>
+        Ecco qua la lista degli argomenti visti ad oggi a lezione:
+        <list>
+            <item n="a">Introduzione al corso</item> 
+            <item n="b">Cos'è la codifica di testi</item>
+            <item n="c">Introduzione a XML</item>
+            <item n="d">Seminario CLARIN</item>
+            <item n="e">Introduzione alla TEI</item>
+        </list>
+    </p>
+</text>
+</TEI>
+
+<!-- ESERCIZIO 
+Utilizzare puntatori, note, lista, glossario; marcare nomi, rs, term. -->
