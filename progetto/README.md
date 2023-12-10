@@ -2,6 +2,11 @@
 
 Il progetto è stato realizzato da Giulia Bertini per l'esame di Codifica di Testi del professor Angelo Mario Del Grosso del Corso di Laurea in Informatica Umanistica nell'anno accademico 2022/2023. 
 
+## Requisiti
+
+[Xerces 2.12.2](https://xerces.apache.org/mirrors.cgi) 
+[SaxonJ-HE 12.3](https://www.saxonica.com/download/java.xml)
+
 ## Comando per la validazione XML tramite Xerces
 ```
 java -cp "xerces_2-12-2/*" dom.Counter codifica.xml
