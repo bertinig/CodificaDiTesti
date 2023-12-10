@@ -1,0 +1,932 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<!-- 
+    Filename: projCdT_Bertini.xml
+    Author: Giulia Bertini
+    Date: 2023-10
+-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <!-- <teiHeader> fornisce medatadi descrittivi e dichiarativi relativi a una risorsa o un insieme di risorse didigitali -->
+    <teiHeader xml:lang="it">
+        <!-- <fileDesc> contiene la descrizione bibliografica di un file digitale -->
+        <fileDesc>
+            <!-- <titleStmt> è l'insieme delle info riguardo il titolo e i responsabili dell'opera -->
+            <titleStmt>
+                <title level="m" type="main">Diari di Emanuele Artom</title>
+                <title type="sub">Trascrizione digitale delle pagine 107, 108 e 109</title>
+                <author role="author" ref="#EA">Emanuele Artom</author>
+                <respStmt>
+                    <resp>Conversione <orgName type="acronym">TEI</orgName> P5 a cura di</resp>
+                    <persName ref="#GB">
+                        <forename>Giulia</forename>
+                        <surname>Bertini</surname>
+                    </persName>
+                </respStmt>
+            </titleStmt>
+            <!-- <editionStmt> è l'insieme delle info riguardo a un'edizione del testo -->
+            <editionStmt>
+                <edition>Edizione digitale realizzata per l'esame di Codifica di Testi del Corso di Laurea in Informatica Umanistica a.a. 2022-23</edition>
+                <respStmt>
+                    <resp>Progetto coordinato da</resp>
+                    <persName ref="AMDG">
+                        <forename type="first">Angelo</forename>
+                        <forename type="middle">Mario</forename>
+                        <surname>Del Grosso</surname>
+                    </persName>
+                </respStmt>
+            </editionStmt>
+            <!-- <extent> descrive approssitivamente la grandezza del testo -->
+            <extent>
+                <measure unit="pages" quantity="3">Le pagine del diaro codificate sono: 107, 108 e 109</measure>
+            </extent>
+            <!-- <publicationStmt> è l'insieme di informazioni riguardo la pubblicazione -->
+            <publicationStmt>
+                <publisher>
+                    <orgName full="yes" ref="#UniPi">Università di Pisa</orgName>
+                </publisher>
+                <pubPlace ref="PI">Pisa</pubPlace>
+                <address>
+                    <postCode>56127</postCode>
+                    <name type="place">Italia</name>    
+                </address>
+                <availability status="free">Opera ad accesso libero</availability>
+                <date when="2023-10">Ottobre 2023</date>
+            </publicationStmt>
+            <!-- <seriesStmt> omesso -->
+            <!-- <notesStmt> omesso -->
+            <!-- <sourceDesc> descrive la fonte originale del testo digitale -->
+            <sourceDesc>
+                <bibl>
+                    <title level="m" type="main">Diari</title>
+                    <author>
+                        <persName ref="#EA">
+                            <forename>Emanuele</forename>
+                            <surname>Artom</surname>
+                        </persName>
+                    </author>
+                    <date from="1943" to="1944">[1943]-1944</date>
+                    <distributor>
+                        <orgName full="yes" ref="#CDEC">Fondazione Centro di Documentazione Ebraica Contemporanea</orgName>
+                    </distributor>
+                    <pubPlace ref="#MI">Milano</pubPlace>
+                    <availability status="free">
+                        <p>
+                            Disponibile presso il 
+                            <institution ref="#CDEC">
+                                <orgName>
+                                    <choice>
+                                        <expan>Centro di Documentazione Ebraica Contemporanea</expan>
+                                        <abbr>CDEC</abbr>
+                                    </choice>
+                                </orgName>
+                            </institution>
+                            , consultabile online.
+                            </p>
+                    </availability>
+                </bibl>
+                <msDesc>
+                    <msIdentifier>
+                        <country key="IT" type="nation">Italia</country>
+                        <settlement type="city" ref="#MI">Milano</settlement>
+                        <institution ref="#CDEC">
+                            <orgName>
+                                <choice>
+                                    <expan>Centro di Documentazione Ebraica Contemporanea</expan>
+                                    <abbr>CDEC</abbr>
+                                </choice>
+                            </orgName>
+                        </institution>
+                        <collection>Fondo Emanuele Artom</collection>
+                        <repository>
+                            <ptr target="http://digital-library.cdec.it/cdec-web/storico/detail/IT-CDEC-ST0003-000006/diari.html"/>
+                            Emanuele Artom, Diari
+                        </repository>
+                        <idno>IT-CDEC-ST0003-000006 - busta 1, fascicolo 9</idno> <!-- identificatore-->
+                    </msIdentifier>
+                    <msContents>
+                        <msItems>
+                            <title level="m" type="main">Diari</title>
+                            <author ref="#EA">Emanuele Artom</author>
+                            <docDate>
+                                <date from="1943-11-30" to="1943-12-2">30 novembre 1943 - 2 dicembre 1943</date>
+                            </docDate>
+                            <textLang mainLang="it">Italiano</textLang>
+                        </msItems>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc form="manuscirpt">
+                            <supportDesc material="paper" source="http://digital-library.cdec.it/cdec-web/storico/detail/IT-CDEC-ST0003-000006/diari.html">
+                                <support>Fogli di <material>carta</material></support>
+                                <extent>
+                                    <measure unit="pages" quantity="174">
+                                        Il manoscritto è composto da <num>174</num> pagine: le prime <num value="2">due</num> pagine contengono un appunto 
+                                        e la lettera originale di <persName ref="#AS">Amalia Segre</persName>, madre di <persName ref="#EA">Emanuele Artom</persName>,
+                                        le restanti pagine contengono il diario. 
+                                    </measure>
+                                </extent>
+                                <condition>
+                                        Il manoscritto è ben conservato, nonostante la presenza di alcuni bordi danneggiati.
+                                        La lettura raramente è impedita da segni e/o macchie.
+                                </condition>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout columns="1" ruledLines="20 25">
+                                    <p>Le pagine del diario sono scritte su unìunica colonna 
+                                    e generalmente presentano 20-25 righe ciascuna.</p>
+                                </layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc hands="2">
+                            <handNote scope="minor" medium="blue pen red pen"> <!-- @scope specifica quanto la mano è usata nel manoscritto -->
+                                <p>Il manoscritto si apre con un'epigrafe scitta a mano da <persName ref="#AS">Amalia Segre</persName>.</p>
+                            </handNote>
+                            <handNote scope="major" medium="black pen pencil">
+                                <p>Il diario inizia dalla seconda pagina
+                                ed è stato scritto a mano da <persName ref="#EA">Emanuele Artom</persName>.</p>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <p>
+                                Le pagine del diario sono stata scritte da <persName ref="#EA">Emanuele Artom</persName> 
+                                tra novembre 1943 fino a febbraio 1944 e riguardano la sua esperienza partigiana.
+                                Queste pagine sono state raccolte dalla madre, <persName ref="#AS">Amalia Segre</persName>,
+                                per il bisogno di ricordare o trasmettere le memorie del figlio.
+                            </p>
+                        </origin>
+                        <acquisition>
+                            <p>
+                                Alla morte della madre, come da lei chiesto nell'epigrafe, le pagine del diario sono state consegnate al 
+                                <orgName ref="#CDEC">Centro di Documentazione Ebraica Contemporanea</orgName>.
+                                Tutta la documentazione originale è stata ricondizionata e digitalizzata
+                                al fine di garantirne la consultabilità ai fini storici.
+                            </p>
+                        </acquisition>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <!-- <encodingDesc> documenta il rapporto tra un testo digitale e le sue fonti -->
+        <encodingDesc>
+            <!-- <projectDesc> descrive perché il testo elettronico è stato codificato -->
+            <projectDesc> 
+                <p>Edizione digitale realizzata per l'esame di Codifica di Testi.</p>
+            </projectDesc>
+            <!-- <editorialDecl> fornisce dettagli sui principi e sulle pratiche editoriali applicati nella codifica -->
+            <editorialDecl> <!-- AGGIUNGI TUTTE LE MODIFICHE -->
+                <correction method="" status="">
+                    <p>Gli errori presenti nel testo sono stati marcati </p>
+                </correction>
+                <normalization method="">
+                    <p></p>
+                </normalization>
+                <punctuation marks="" placement="">
+                    <p></p>
+                </punctuation>
+                <hyphenation eol="">
+                    <p></p>
+                </hyphenation>
+                <quotation marks="">
+                    <p></p>
+                </quotation>
+            </editorialDecl>
+            <refsDecl>
+                <p>I riferimenti sono stati realizzati attraverso le coppie di attributi <att>xml:id</att> e <att>ref</att>.</p>
+            </refsDecl>
+        </encodingDesc>
+        <!-- <profileDesc> contiene una dettagliata descrizione degli aspetti non bibliografici del testo -->
+        <profileDesc>
+            <langUsage>
+                <language ident="it">Italiano</language>
+            </langUsage>
+            <creation>
+                <date when="2023-10">Ottobre 2023</date>
+            </creation>
+        </profileDesc>
+    </teiHeader>
+    <!-- <facsimile> contiene la rappresentazione grafica di una fonte scritta -->
+    <facsimile>
+        <!-- <surface> definisce uno spazio bidimensionale descritto da coordinate -->
+        <!-- pagina 107 -->
+        <surface xml:id="s107" n="1">
+            <graphic url="img/107.jpeg" xml:id="g107" width="751.4px" height="1024.4" n="1"/>
+            <!-- <ulx> coordinata x dell'angolo sx alto di un rettangolo
+            <uly> coordinata y dell'angolo sx alto di un rettangolo
+            <lrx> coordinata x dell'angolo dx basso di un rettangolo
+            <lry> coordinata y dell'angolo dx basso di un rettangolo --> 
+            <zone xml:id="p1r1" ulx="76" uly="94" lrx="658" lry="129" rendition="line"/>
+            <zone xml:id="p1r2" ulx="74" uly="137" lrx="669" lry="173" rendition="line"/>
+            <zone xml:id="p1r3" ulx="77" uly="170" lrx="657" lry="213" rendition="line"/>
+            <zone xml:id="p1r4" ulx="80" uly="211" lrx="657" lry="249" rendition="line"/>
+            <zone xml:id="p1r5" ulx="75" uly="241" lrx="637" lry="281" rendition="line"/>
+            <zone xml:id="p1r6" ulx="77" uly="288" lrx="697" lry="321" rendition="line"/>
+            <zone xml:id="p1r7" ulx="74" uly="320" lrx="652" lry="358" rendition="line"/>
+            <zone xml:id="p1r8" ulx="79" uly="367" lrx="686" lry="399" rendition="line"/>
+            <zone xml:id="p1r9" ulx="78" uly="406" lrx="641" lry="436" rendition="line"/>
+            <zone xml:id="p1r10" ulx="78" uly="438" lrx="654" lry="477" rendition="line"/>
+            <zone xml:id="p1r11" ulx="80" uly="484" lrx="658" lry="510" rendition="line"/>
+            <zone xml:id="p1r12" ulx="77" uly="518" lrx="462" lry="551" rendition="line"/>
+            <zone xml:id="p1r13" ulx="78" uly="556" lrx="644" lry="597" rendition="line"/>
+            <zone xml:id="p1r14" ulx="77" uly="601" lrx="627" lry="634" rendition="line"/>
+            <zone xml:id="p1r15" ulx="74" uly="631" lrx="618" lry="672" rendition="line"/>
+            <zone xml:id="p1r16" ulx="77" uly="668" lrx="641" lry="710" rendition="line"/>
+            <zone xml:id="p1r17" ulx="74" uly="704" lrx="623" lry="746" rendition="line"/>
+            <zone xml:id="p1r18" ulx="81" uly="744" lrx="605" lry="784" rendition="line"/>
+            <zone xml:id="p1r19" ulx="86" uly="791" lrx="658" lry="824" rendition="line"/>
+            <zone xml:id="p1r20" ulx="85" uly="824" lrx="621" lry="863" rendition="line"/>
+            <zone xml:id="p1r21" ulx="85" uly="865" lrx="614" lry="903" rendition="line"/>
+            <zone xml:id="p1r22" ulx="86" uly="904" lrx="646" lry="944" rendition="line"/>
+        </surface>
+        <!-- pagina 108 -->
+        <surface xml:id="s108" n="2">
+            <graphic url="img/108.jpeg" xml:id="g108" width="772.4px" height="1024.4px" n="2"/>
+            <zone xml:id="p2r1" ulx="90" uly="95" lrx="646" lry="131" rendition="line"/>
+            <zone xml:id="p2r2" ulx="91" uly="131" lrx="630" lry="170" rendition="line"/>
+            <zone xml:id="p2r3" ulx="91" uly="174" lrx="619" lry="206" rendition="line"/>
+            <zone xml:id="p2r4" ulx="95" uly="215" lrx="647" lry="242" rendition="line"/>
+            <zone xml:id="p2r5" ulx="90" uly="249" lrx="582" lry="281" rendition="line"/>
+            <zone xml:id="p2r6" ulx="90" uly="284" lrx="658" lry="323" rendition="line"/>
+            <zone xml:id="p2r7" ulx="99" uly="326" lrx="580" lry="360" rendition="line"/>
+            <zone xml:id="p2r8" ulx="103" uly="364" lrx="610" lry="395" rendition="line"/>
+            <zone xml:id="p2r9" ulx="96" uly="407" lrx="596" lry="432" rendition="line"/>
+            <zone xml:id="p2r10" ulx="104" uly="442" lrx="618" lry="470" rendition="line"/>
+            <zone xml:id="p2r11" ulx="96" uly="479" lrx="607" lry="509" rendition="line"/>
+            <zone xml:id="p2r12" ulx="98" uly="523" lrx="608" lry="548" rendition="line"/>
+            <zone xml:id="p2r13" ulx="102" uly="560" lrx="630" lry="591" rendition="line"/>
+            <zone xml:id="p2r14" ulx="100" uly="594" lrx="669" lry="633" rendition="line"/>
+            <zone xml:id="p2r15" ulx="101" uly="634" lrx="596" lry="665" rendition="line"/>
+            <zone xml:id="p2r16" ulx="92" uly="675" lrx="630" lry="711" rendition="line"/>
+            <zone xml:id="p2r17" ulx="104" uly="715" lrx="587" lry="746" rendition="line"/>
+            <zone xml:id="p2r18" ulx="104" uly="754" lrx="650" lry="784" rendition="line"/>
+            <zone xml:id="p2r19" ulx="98" uly="792" lrx="618" lry="820" rendition="line"/>
+            <zone xml:id="p2r20" ulx="92" uly="828" lrx="687" lry="864" rendition="line"/>
+            <zone xml:id="p2r21" ulx="90" uly="867" lrx="636" lry="900" rendition="line"/>
+            <zone xml:id="p2r22" ulx="97" uly="905" lrx="638" lry="934" rendition="line"/>
+        </surface>
+        <!-- pagina 109 -->
+        <surface xml:id="s109" n="3">
+            <graphic url="img/109.jpeg" xml:id="g109" width="" height="" n="3"/>
+            <zone xml:id="p3r1" ulx="466" uly="97" lrx="523" lry="129" rendition="line"/>
+            <zone xml:id="p3r2" ulx="90" uly="129" lrx="656" lry="175" rendition="line"/>
+            <zone xml:id="p3r3" ulx="90" uly="166" lrx="646" lry="209" rendition="line"/>
+            <zone xml:id="p3r4" ulx="97" uly="210" lrx="682" lry="250" rendition="line"/>
+            <zone xml:id="p3r5" ulx="99" uly="242" lrx="689" lry="294" rendition="line"/>
+            <zone xml:id="p3r6" ulx="87" uly="287" lrx="694" lry="333" rendition="line"/>
+            <zone xml:id="p3r7" ulx="84" uly="315" lrx="692" lry="366" rendition="line"/>
+            <zone xml:id="p3r8" ulx="92" uly="363" lrx="711" lry="422" rendition="line"/>
+            <zone xml:id="p3r9" ulx="93" uly="397" lrx="689" lry="451" rendition="line"/>
+            <zone xml:id="p3r10" ulx="105" uly="443" lrx="676" lry="473" rendition="line"/>
+            <zone xml:id="p3r11" ulx="85" uly="471" lrx="742" lry="518" rendition="line"/>
+            <zone xml:id="p3r12" ulx="88" uly="520" lrx="685" lry="557" rendition="line"/>
+            <zone xml:id="p3r13" ulx="86" uly="554" lrx="642" lry="596" rendition="line"/>
+            <zone xml:id="p3r14" ulx="88" uly="596" lrx="638" lry="630" rendition="line"/>
+            <zone xml:id="p3r15" ulx="83" uly="635" lrx="609" lry="678" rendition="line"/>
+            <zone xml:id="p3r16" ulx="82" uly="680" lrx="690" lry="721" rendition="line"/>
+            <zone xml:id="p3r17" ulx="99" uly="711" lrx="682" lry="748" rendition="line"/>
+            <zone xml:id="p3r18" ulx="86" uly="754" lrx="662" lry="793" rendition="line"/>
+            <zone xml:id="p3r19" ulx="79" uly="791" lrx="662" lry="832" rendition="line"/>
+            <zone xml:id="p3r20" ulx="87" uly="830" lrx="633" lry="867" rendition="line"/>
+            <zone xml:id="p3r21" ulx="99" uly="863" lrx="663" lry="904" rendition="line"/>
+            <zone xml:id="p3r22" ulx="77" uly="902" lrx="692" lry="966" rendition="line"/>
+        </surface>
+    </facsimile>
+    <!-- <text> contiene la trascrizione delle pagine del diaro -->
+    <text xml:id="testo" xml:lang="it" hand="#EA" type="diary" subtype="manuscript">
+        <body>
+            <div>
+                <!-- Inizio pagina 107 -->
+                <ab type="page" xml:lang="it" n="107">
+                    <!-- <pb> indica l'inizio di una pagina -->
+                    <pb xml:id="p107" facs="#s107"/>
+                    <!-- Riga 1, pag 107 -->
+                    <lb xml:id="1p107" facs="#p1r1" n="1" break="no"/>
+                    si parlò della nostra questione e temo
+                    <!-- Riga 2, pag 107 -->
+                    <lb xml:id="2p107" facs="#p1r2" n="2" break="no"/>
+                    che la ragione sia almeno in parte 
+                    <!-- Riga 3, pag 107 -->
+                    <lb xml:id="3p107" facs="#p1r3" n="3" break="no"/>
+                    <del rend="overstrike">da</del> sua<pc type="colons">:</pc> rimproverava l<pc type="apostrophe">'</pc>inazione
+                    <!-- Riga 4, pag 107 -->
+                    <lb xml:id="4p107" facs="#p1r4" n="4" break="yes"/>
+                    della banda e dice di aver pro<unclear reason="faded"><pc type="hyphenation">=</pc></unclear>
+                    <!-- Riga 5, pag 107 -->
+                    <lb xml:id="5p107" facs="#p1r5" n="5" break="no"/>
+                    testato<pc type="period">.</pc> Poi accusò il povero <persName xml:id="#T">Toni</persName>
+                    <!-- Riga 6, pag 107 -->
+                    <lb xml:id="6p107" facs="#p1r6" n="6" break="no"/>
+                    di aver rubato del burro e dovetti
+                    <!-- Riga 7, pag 107 -->
+                    <lb xml:id="7p107" facs="#p1r7" n="7" break="no"/>
+                    intervenire in sua difesa<pc type="comma">,</pc> 
+                    <del>
+                        <gap reason="illegible" quantity="4" unit="characyer"/>
+                    </del> 
+                    <del rend="overstrike">ho</del>
+                    <!-- Riga 8, pag 107 -->
+                    <lb xml:id="8p107" facs="#p1r8" n="8" break="bo"/>
+                    si nota ancora come questi elementi
+                    <!-- Riga 9, pag 107 -->
+                    <lb xml:id="9p107" facs="#p1r9" n="9" break="no"/>
+                    comunisti<pc type="comma">,</pc> tipo <persName xml:id="#C">Cornera</persName><pc type="comma">,</pc> privi di
+                    <!-- Riga 10, pag 107 -->
+                    <lb xml:id="10p107" facs="#p1r10" n="10" break="no"/>
+                    educazione<pc type="comma">,</pc> sono meno benvoluti
+                    <!-- Riga 11, pag 107 -->
+                    <lb xml:id="11p107" facs="#p1r11" n="11" break="no"/>
+                    dai soldati di noi<pc type="comma">,</pc> tutti elementi
+                    <!-- Riga 12, pag 107 -->
+                    <lb xml:id="12p107" facs="#p1r12" n="12" break="no"/>
+                    su cui bisogna giocare<pc type="period">.</pc>
+                    <!-- Riga 13, pag 107 -->
+                    <lb xml:id="13p107" facs="#p1r13" n="13" break="no"/>
+                    <choice>
+                        <orig>Stamane</orig>
+                        <reg resp="#GB">Stamani</reg>
+                    </choice><pc type="comma">,</pc> svegliandomi in una
+                    <!-- Riga 14, pag 107 -->
+                    <lb xml:id="14p107" facs="#p1r14" n="14" break="no"/>
+                    stalla<pc type="comma">,</pc> dissi a
+                    <persName ref="#GS">    
+                        <choice><abbr>G</abbr><expan cert="high" resp="#GB"><name>Giorgio</name></expan></choice>
+                    </persName><pc type="colons" force="strong">:</pc>
+                    <supplied reason="omitted-in-original" resp="#GB">"</supplied>Strano<pc type="comma">,</pc> per 
+                    <!-- Riga 15, pag 107 -->
+                    <lb xml:id="15p107" facs="#p1r15" n="15" break="no"/>
+                    tre giorni <del rend="overstrike">almeno</del> sappiamo che
+                    <!-- Riga 16, pag 107 -->
+                    <lb xml:id="16p107" facs="#p1r16" n="16" break="no"/>
+                    cosa faremo<pc type="period">.</pc> Oggi a 
+                    <placeName ref="#B">
+                        <settlement><choice><abbr type="grographic"><name type="place">B</name></abbr><expan cert="high" resp="#GB">Barge</expan></choice></settlement></placeName>, domani 
+                    <gap>
+                        <supplied reason="illegible" resp="#GB">
+                            e
+                        </supplied>
+                    </gap>
+                    <!-- Riga 17, pag 107 -->
+                    <lb xml:id="17p107" facs="#p1r17" n="17" break="no"/>
+                    dopodomani a discutere a 
+                    <placeName ref="#TP"><settlement><choice><abbr type="acronym">T<pc type="period" force="weak">.</pc>P<pc type="period" force="weak">.</pc></abbr><expan cert="high" resp="#GB"><name type="place">Torre Pellice</name></expan></choice></settlement></placeName><supplied reason="omitted-in-original" resp="#GB">"</supplied> 
+                    <!-- Riga 18, pag 107 -->
+                    <lb xml:id="18p107" facs="#p1r18" n="18" break="no"/>
+                    Ma probabilmente sbagliavo il
+                    <!-- Riga 19, pag 107 -->
+                    <lb xml:id="19p107" facs="#p1r19" n="19" break="no"/>
+                    conto<choice><sic><pc type="comma">,</pc></sic><corr resp="#GB"><pc type="period">.</pc></corr></choice>
+                     I nazisti hanno attaccato 
+                    <!-- Riga 20, pag 107 -->
+                    <lb xml:id="20p107" facs="#p1r20" n="20" break="no"/>
+                    le bande di 
+                    <placeName ref="#Bag"><settlement>Bagnolo</settlement></placeName><pc type="period">.</pc> Si vedono
+                    <!-- Riga 21, pag 107 -->
+                    <lb xml:id="21p107" facs="#p1r21" n="21" break="no"/>
+                    molti incenti per tutta la valle
+                    <!-- Riga 22, pag 107 -->
+                    <lb xml:id="22p107" facs="#p1r22" n="22" break="no"/>
+                    con i pennacchi di fumo e nel cielo
+                </ab>
+                <!-- Inizio pagina 108 -->
+                <ab type="page" xml:lang="it" n="108">
+                    <pb xml:id="p108" facs="#s108"/>
+                    <!-- Riga 1, pag 108 -->
+                    <lb xml:id="1p108" facs="#p2r1" n="1" break="no"/>
+                    una <del rend="overstrike">grande</del> larga nuvola 
+                    <choice>
+                        <sic>grigià</sic>
+                        <corr resp="#GB">grigia</corr>
+                    </choice><pc type="comma">.</pc> 
+                    <!-- Riga 2, pag 108 -->
+                    <lb xml:id="2p108" facs="#p2r2" n="2" break="yes"/>
+                    Siccome la strada automobili<unclear reason="faded"><pc type="hyphenation">=</pc></unclear>
+                    <!-- Riga 3, pag 108 -->
+                    <lb xml:id="3p108" facs="#p2r3" n="3" break="no"/>
+                    stica giunge fino al 
+                    <placeName ref="#M"><settlement type="village">Montoso</settlement></placeName><pc type="comma">,</pc>
+                    <!-- Riga 4, pag 108 -->
+                    <lb xml:id="4p108" facs="#p2r4" n="4" break="no"/>
+                    i nemici <del rend="overstrike">ha</del> l<pc type="apostrophe">'</pc>avranno risalita 
+                    <!-- Riga 5, pag 108 -->
+                    <lb xml:id="5p108" facs="#p2r5" n="5" break="no"/>
+                    compiendo grandi distruzioni<pc type="period">.</pc>
+                    <!-- Riga 6, pag 108 -->
+                    <lb xml:id="6p108" facs="#p2r6" n="6" break="yes"/>
+                    Corre voce che abbiano anche as<unclear reason="faded"><pc type="hyphenation">=</pc></unclear>
+                    <!-- Riga 7, pag 108 -->
+                    <lb xml:id="7p108" facs="#p2r7" n="7" break="no"/>
+                    salito 
+                    <placeName ref="#A"><settlement type="village">Agliasco</settlement></placeName><pc type="semicolon">;</pc> 
+                    <del rend="overstrike">
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                    </del> 
+                    <persName ref="Z">Zama</persName> ha
+                    <!-- Riga 8, pag 108 -->
+                    <lb xml:id="8p108" facs="#p2r8" n="8" break="no"/>
+                    minato la strada e dei 
+                    <choice>
+                        <orig>Tedeschi</orig>
+                        <reg resp="#GB">tedeschi</reg>
+                    </choice>
+                    <!-- Riga 9, pag 108 -->
+                    <lb xml:id="9p108" facs="#p2r9" n="9" break="no"/>
+                    si farà una strage<pc type="comma">,</pc> tutte le vie
+                    <!-- Riga 10, pag 108 -->
+                    <lb xml:id="10p108" facs="#p2r10" n="10" break="no"/>
+                    intorno a 
+                    <placeName ref="#B">
+                        <settlement type="village"> 
+                            Barge
+                        </settlement>
+                    </placeName> 
+                    sono bloccate
+                    <!-- Riga 11, pag 108 -->
+                    <lb xml:id="11p108" facs="#p2r11" n="11" break="no"/>
+                    dalla 
+                    <choice>
+                        <orig>Milizia</orig>
+                        <reg resp="#GB">milizia</reg>
+                    </choice>
+                    <unclear reason="faded"> e</unclear> gli aeroplani
+                    <!-- Riga 12, pag 108 -->
+                    <lb xml:id="12p108" facs="#p2r12" n="12" break="no"/>
+                    volteggiano di continuo bassi
+                    <!-- Riga 13, pag 108 -->
+                    <lb xml:id="13p108" facs="#p2r13" n="13" break="no"/>
+                    su di noi<pc type="period">.</pc> Stare qui nella scala
+                    <!-- Riga 14, pag 108 -->
+                    <lb xml:id="14p108" facs="#p2r14" n="14" break="no"/>
+                    di legno dell<pc type="aphostrophe">'</pc>i<gap quantity="1" unit="chars" reason="inaudible"/><supplied reason="faded-ink" resp="#GB">n</supplied>fermeria a scrivere
+                    <!-- Riga 15, pag 108 -->
+                    <lb xml:id="15p108" facs="#p2r15" n="15" break="no"/>
+                    tranquillo mentre aspetto il
+                    <!-- Riga 16, pag 108 -->
+                    <lb xml:id="16p108" facs="#p2r16" n="16" break="no"/>
+                    pranzo mi pare quasi ridicolo<pc type="comma">,</pc>
+                    <!-- Riga 17, pag 108 -->
+                    <lb xml:id="17p108" facs="#p2r17" n="17" break="no"/>
+                    mentre siamo in battaglia<pc type="comma">,</pc>
+                    <!-- Riga 18, pag 108 -->
+                    <lb xml:id="18p108" facs="#p2r18" n="18" break="no"/>
+                    ma 
+                    <del rend="overstrike">
+                        <gap quantity="3" unit="chars" reason="illegible"/>
+                    </del> 
+                    la redazione di questo
+                    <!-- Riga 19, pag 108 -->
+                    <lb xml:id="19p108" facs="#p2r19" n="19" break="no"/>
+                    diario <unclear reason="faded">è</unclear> la mia unica attività
+                    <!-- Riga 20, pag 108 -->
+                    <lb xml:id="20p108" facs="#p2r20" n="20" break="no"/>
+                    intellettuale e non voglio 
+                    <choice>
+                        <orig>rinunziarvi</orig>
+                        <reg resp="#GB">rinunciarvi</reg>
+                    </choice><pc type="comma">,</pc>
+                    <!-- Riga 21, pag 108 -->
+                    <lb xml:id="21p108" facs="#p2r21" n="21" break="no"/>
+                    d<pc type="apostrophe">'</pc>altra parte fra qualche 
+                    t<gap quantity="1" unit="chars" reason="inaudible"/><supplied reason="faded-ink" resp="#GB">e</supplied>mpo
+                    <!-- Riga 22, pag 108 -->
+                    <lb xml:id="22p108" facs="#p2r22" n="22" break="no"/>
+                    sarà bello rileggere queste orribili
+                </ab>
+                <!-- Inizio pagina 109 -->
+                <ab type="page" xml:lang="it" n="109">
+                    <pb xml:id="p109" facs="#s109"/>
+                    <!-- Riga 1, pag 109 -->
+                    <lb xml:id="1p109" facs="#p3r1" n="1" break="no"/>
+                    <date>
+                        <num>28</num>
+                        <gap reason="omitted"/>
+                    </date><pc type="period">.</pc>
+                    <!-- Riga 2, pag 109 -->
+                    <lb xml:id="2p109" facs="#p3r2" n="2" break="no"/>
+                    Ieri non ebbi tempo di scrivere<pc type="period">.</pc>
+                    <!-- Riga 3, pag 109 -->
+                    <lb xml:id="3p109" facs="#p3r3" n="3" break="no"/>
+                    <del rend="overstike">Dopo aver</del> 
+                    <choice>
+                        <sic>dormito</sic>
+                        <corr resp="#GB">Dormii</corr> 
+                    </choice>
+                    male tutta
+                    <!-- Riga 4, pag 109 -->
+                    <lb xml:id="4p109" facs="#p3r4" n="4" break="no"/>
+                    la notte<pc type="comma">,</pc> vicino a <persName ref="#P">Peru</persName><pc type="comma">,</pc> che alle
+                    <!-- Riga 5, pag 109 -->
+                    <lb xml:id="5p109" facs="#p3r5" n="5" break="yes"/>
+                    <time when="17:30">
+                        <num type="cardinal" value="17">5</num> 
+                        e <num value="30">mezza</num>
+                    </time>    
+                    <add place="above" hand="#EA">
+                         della sera prima
+                    </add>
+                     aveva già prepa<pc type="hyphenation">=</pc>
+                    <!-- Riga 6, pag 109 -->
+                    <lb xml:id="6p109" facs="#p3r6" n="6" break="yes"/>
+                    rato la cena e voleva subito par<pc type="hyphenation">=</pc>
+                    <!-- Riga 7, pag 109 -->
+                    <lb xml:id="7p109" facs="#p3r7" n="7" break="no"/>
+                    tire 
+                    <add place="above" hand="#EA">
+                        tanto temeva la notte
+                    </add>
+                    <pc type="period">.</pc> Ho detto che ha paura dei
+                    <!-- Riga 8, pag 109 -->
+                    <lb xml:id="8p109" facs="#p3r8" n="8" break="no"/>
+                    <choice>
+                        <sic><abbr>Ted</abbr></sic>
+                        <corr resp="#GB"><expan>tedeschi</expan></corr>
+                    <pc type="comma">,</pc>
+                    </choice>
+                     ma ancora di più dell<pc type="apostrophe">'</pc>acqua<pc type="period">.</pc>
+                    <!-- Riga 9, pag 109 -->
+                    <lb xml:id="9p109" facs="#p3r9" n="9" break="no"/>
+                    Non
+                    <choice> 
+                        <sic>glie l<pc type="apostrophe">'</pc></sic>
+                        <corr resp="#GB">gliel<pc type="apostrophe">'</pc></corr>
+                    </choice>ho mai vista toccare
+                    <!-- Riga 10, pag 109 -->
+                    <lb xml:id="10p109" facs="#p3r10" n="10" break="no"/>
+                    salvo in un<pc type="apostrophe">'</pc>occasione<pc type="comma">,</pc> quando 
+                    <!-- Riga 11, pag 109 -->
+                    <lb xml:id="11p109" facs="#p3r11" n="11" break="no"/>
+                    porta un bicchiere pieno <del rend="overstrike">per</del>
+                    <add place="above" hand="#EA">
+                        d<pc type="apostrophe">'</pc>acqua da bere
+                    </add>
+                    <!-- Riga 12, pag 109 -->
+                    <lb xml:id="12p109" facs="#p3r12" n="12" break="no"/>
+                    <del rend="overstike">bere<pc type="period">.</pc></del> Allora mentre lo tiene con 
+                    <!-- Riga 13, pag 109 -->
+                    <lb xml:id="13p109" facs="#p3r13" n="13" break="yes,"/>
+                    il resto della mano<pc type="comma">,</pc> 
+                    <del rend="overstrike">infila</del> 
+                    <add place="above" hand="#EA">ma immerge</add>
+                     co<pc type="hyphenation">=</pc>
+                    <!-- Riga 14, pag 109 -->
+                    <lb xml:id="14p109" facs="#p3r14" n="14" break="no"/>
+                    raggiosamente l<pc type="apostrophe">'</pc>indice fino 
+                    <!-- Riga 15, pag 109 -->
+                    <lb xml:id="15p109" facs="#p3r15" n="15" break="no"/>
+                    nel fondo<pc type="period">.</pc> La sua è una 
+                    <!-- Riga 16, pag 109 -->
+                    <lb xml:id="16p109" facs="#p3r16" n="16" break="yes"/>
+                    sporcizia che un filosofo po<pc type="hyphenation">=</pc>
+                    <!-- Riga 17, pag 109 -->
+                    <lb xml:id="17p109" facs="#p3r17" n="17" break="no"/>
+                    trebbe chiamare trascendente
+                    <!-- Riga 18, pag 109 -->
+                    <lb xml:id="18p109" facs="#p3r18" n="18" break="no"/>
+                    <del rend="overstrike">e metafisica<pc type="comma">,</pc></del> 
+                    <choice>
+                        <sic>perchè</sic>
+                        <corr resp="#GB">perché</corr>
+                    </choice>
+                     pare che
+                    <!-- Riga 19, pag 109 -->
+                    <lb xml:id="19p109" facs="#p3r19" n="19" break="no"/>
+                    anche se si lavasse tutta una
+                    <!-- Riga 20, pag 109 -->
+                    <lb xml:id="20p109" facs="#p3r20" n="20" break="no"/>
+                    settimana parrebbe sporco
+                    <!-- Riga 21, pag 109 -->
+                    <lb xml:id="21p109" facs="#p3r21" n="21" break="no"/>
+                    lo stesso<pc type="comma">,</pc> tanto è impregnato
+                    <!-- Riga 22, pag 109 -->
+                    <lb xml:id="22p109" facs="#p3r22" n="22" break="no"/>
+                    dopo <num type="cardinal" value="28">ventotto</num> anni di sudiciume<pc type="comma">.</pc>
+                </ab>
+            </div>
+        </body>
+        <!-- <back> contiene gli appendici -->
+        <back>
+            <div>
+                <!-- Lista dei luoghi citati -->
+                <listPlace>
+                    <!-- Barge -->
+                    <place xml:id="B">
+                        <placeName ref="https://www.geonames.org/3182356/barge.html">Barge</placeName>
+                        <country type="nation" key="IT">Italia</country>
+                        <desc>
+                            Barge si trova in provincia di Cuneo, Piemonte.
+                            Qui Emanuele Artom si arruola tra i partigiani.
+                        </desc>
+                    </place>
+                    <!-- Torre Pellice -->
+                    <place xml:id="TP">
+                        <placeName ref="https://www.geonames.org/3165427/torre-pellice.htm">Torre Pellice</placeName>
+                        <country type="nation" key="IT">Italia</country>
+                        <desc>
+                            Torre Pellice è un comune di Torino, situato nella Val Pellice in Piemonte.
+                        </desc>
+                    </place>
+                    <!-- Bagnolo -->
+                    <place xml:id="Bag">
+                        <placeName ref="https://www.geonames.org/3182499/bagnolo-piemonte.html">Bagnolo</placeName>
+                        <country type="nation" key="IT">Italia</country>
+                        <desc>
+                            Bagnolo Piemonte è un comune dela provincia di Cuneo, in Piemonte.
+                        </desc>
+                    </place>
+                    <!-- Montoso -->
+                    <place xml:id="M">
+                        <placeName ref="https://www.geonames.org/8966374/montoso.html ">Montoso</placeName>
+                        <country type="nation" key="IT">Italia</country>
+                        <desc>
+                            Montoso è una frazione del comune di Bagnolo Piemonte, in provincia di Cuneo.
+                        </desc>
+                    </place>
+                    <!-- Agliasco -->
+                    <place xml:id="A">
+                        <placeName ref="https://www.geonames.org/8981436/agliasco.html">Agliasco</placeName>
+                        <country type="nation" key="IT">Italia</country>
+                        <desc>
+                            Agliasco è una frazione del comune di Paesana, in provincia di Cuneo.
+                        </desc>
+                    </place>
+                    <!-- Aosta -->
+                    <place xml:id="AO">
+                        <placeName ref="https://www.geonames.org/3182997/aosta.html">Aosta</placeName>
+                        <country type="nation" key="IT">Italia</country>
+                        <desc>
+                            Aosta è il capoluogo di regione della Valle d'Aosta.
+                        </desc>
+                    </place>
+                    <!-- Torino -->
+                    <place xml:id="TO">
+                        <placeName ref="https://www.geonames.org/3165524/turin.html">Torino</placeName>
+                        <country type="nation" key="IT">Italia</country>
+                        <desc>
+                            Torino è il capoluogo di regione del Piemonte.
+                        </desc>
+                    </place>
+                    <!-- Pisa -->
+                    <place xml:id="PI">
+                        <placeName ref="https://www.geonames.org/3170647/pisa.html">Pisa</placeName>
+                        <country type="nation" key="IT">Italia</country>
+                        <desc>
+                            Pisa è una provincia della Toscana, sede dell'Università di Pisa.
+                        </desc>
+                    </place>
+                </listPlace>
+                <!-- Lista delle persone citate -->
+                <listPerson>
+                    <!-- Emanuele Artom -->
+                    <person xml:id="EA">
+                        <persName role="partigiano">
+                            <forename>Emanuele</forename>
+                            <surname>Artom</surname>
+                            <addName type="alias">Eugenio Ansaldi</addName>
+                            <ref target="http://digital-library.cdec.it/cdec-web/persone/detail/person-it-cdec-eaccpf0001-000015/artom-emanuele.html?persone=%22Artom%2C+Emanuele%22"/>
+                        </persName>
+                        <birth>
+                            <date when="1915-06-23">23/06/1915</date>
+                            <placeName ref="#AO">
+                                <settlement type="municipality">Aosta</settlement>
+                                <settlement type="district" key="AO">Aosta</settlement>
+                                <country type="nation" key="IT">Italia</country>
+                            </placeName>
+                        </birth>
+                        <sex>M</sex>
+                        <death>
+                            <date when="1944-04-07">07/04/1944</date>
+                            <placeName ref="TO">
+                                <settlement type="municipality">Torino</settlement>
+                                <settlement type="district" key="TO">Torino</settlement>
+                                <country type="nation" key="IT">Italia</country>
+                            </placeName>
+                        </death>
+                        <note>
+                            <p>
+                                Emanuele Artom si è laureato in lettere presso l'Università di Torino 
+                                ed è stato uno dei collaboratori del grande Dizionario Utet.
+                                Si è iscritto al Partito d'Azione nel 1943 e si è arruolato tra i partigiani
+                                con il nome di Eugenio Ansaldi. Viene nominato commissario politico delle bande
+                                "Italia Libera" operanti in Val Pellice e Val Germanasca. 
+                                Viene catturato dai fascisti e consegnato ai tedeschi, 
+                                muore nel 1944 a causa delle torture inflittegli.
+                            </p>
+                        </note>
+                    </person>
+                    <!-- Amalia Segre -->
+                    <person xml:id="AS">
+                        <persName role="insegnante">
+                            <forename>Amalia</forename>
+                            <surname>Segre</surname>
+                            <ref target="http://digital-library.cdec.it/cdec-web/persone/detail/person-it-cdec-eaccpf0001-017448/segre-amalia.html"/>
+                        </persName>
+                        <birth>
+                            <date when="1980">1890</date>
+                            <placeName ref="#TO">
+                                <settlement type="municipality">Torino</settlement>
+                                <settlement type="district" key="TO">Torino</settlement>
+                                <country type="nation" key="IT">Italia</country>
+                            </placeName>
+                        </birth>
+                        <sex>F</sex>
+                        <death>
+                            <date when="1972-10-09">09/10/1972</date>
+                            <placeName ref="TO">
+                                <settlement type="municipality">Torino</settlement>
+                                <settlement type="district" key="TO">Torino</settlement>
+                                <country type="nation" key="IT">Italia</country>
+                            </placeName>
+                        </death>
+                        <note></note>
+                    </person>
+                    <!-- G = Giorgio Segre -->
+                    <person xml:id="GS">
+                        <persName role="docente">
+                            <forename>Giorgio</forename>
+                            <surname>Segre</surname>
+                            <ref target="https://digital-library.cdec.it/cdec-web/persone/detail/person-it-cdec-eaccpf0001-000466/segre-giorgio.html"/>
+                        </persName>
+                        <birth>
+                            <date when="1920-02-20">20/02/1920</date>
+                            <placeName ref="#TO">
+                                <settlement type="municipality">Torino</settlement>
+                                <settlement type="district" key="">Torino</settlement>
+                                <country type="nation" key="IT">Italia</country>
+                            </placeName>
+                        </birth>
+                        <sex>M</sex>
+                        <death>
+                            <date when="1996-08-13">13/08/1996</date>
+                        </death>
+                        <note>
+                            <p>
+                                Giorgio Segre gestisce insieme a Emanuele Artom la Biblioteca
+                                della Comunità Ebraica. Nel 1943 si rifugia con la famiglia a Barge
+                                dove prende parte alla lotta di liberazione.
+                            </p>
+                        </note>
+                    </person>
+                    <!-- Toni -->
+                    <person xml:id="T">
+                        <persName>
+                            <addName type="nick">Toni</addName>
+                        </persName>
+                        <birth>
+                            <date>Sconosciuta</date>
+                        </birth>
+                        <sex>M</sex>
+                        <death>
+                            <date>Sconosciuta</date>
+                        </death>
+                        <note>Citato all'interno del diario alla riga 5 di pagina 107.</note>
+                    </person>
+                    <!-- Cornera -->
+                    <person xml:id="C">
+                        <persName>
+                            <addName type="nick">Cornera</addName>
+                        </persName>
+                        <birth>
+                            <date>Sconosciuta</date>
+                        </birth>
+                        <sex>M</sex>
+                        <death>
+                            <date>Sconosciuta</date>
+                        </death>
+                        <note>Citato all'interno del diario alla riga 9 di pagina 107.</note>
+                    </person>
+                    <!-- Zama -->
+                    <person>
+                        <persName>
+                            <addName type="nick">Zama</addName>
+                        </persName>
+                        <birth>
+                            <date>Sconosciuta</date>
+                        </birth>
+                        <sex>M</sex>
+                        <death>
+                            <date>Sconosciuta</date>
+                        </death>
+                        <note>Citato all'interno del diario alla riga 7 di pagina 108.</note>
+                    </person>
+                    <!-- Peru -->
+                    <person xml:id="P">
+                        <persName>
+                            <addName type="nick">Peru</addName>
+                        </persName>
+                        <birth>
+                            <date>Sconosciuta</date>
+                        </birth>
+                        <sex>M</sex>
+                        <death>
+                            <date>Sconosciuta</date>
+                        </death>
+                        <note>Citato all'interno del diario alla riga 4 di pagina 109.</note>
+                    </person>
+                    <!-- Angelo Mario Del Grosso -->
+                    <person xml:id="AMDG">
+                        <persName role="docente">
+                            <forename>Angelo</forename>
+                            <forename>Mario</forename>
+                            <surname>Del Grosso</surname>
+                            <ref target="https://unimap.unipi.it/cercapersone/dettaglio.php?ri=129739"/>
+                        </persName>
+                        <sex>M</sex>
+                        <note>Angelo Mario Del Grosso insegna Codifica di Testi nel CdL in Informatica Umanistica a Pisa.</note>
+                    </person>
+                    <!-- Giulia Bertini -->
+                    <person xml:id="GB">
+                        <persName role="studentessa">
+                            <forename>Giulia</forename>
+                            <surname>Bertini</surname>
+                            <ref target=""/>
+                        </persName>
+                        <birth>
+                            <date when="1999-11-04">04/11/1999</date>
+                            <placeName ref="Po">
+                                <settlement type="municipality">Pontedera</settlement>
+                                <settlement type="district" key="PI">Pisa</settlement>
+                                <country type="nation" key="IT">Italia</country>
+                            </placeName>
+                        </birth>
+                        <sex>F</sex>
+                        <note>Giulia Bertini è una studentessa del Corso di Laurea in Informatica Umanistica.</note>
+                    </person>
+                </listPerson>
+                <!-- Lista delle organizzazioni citate -->
+                <listOrg>
+                    <!-- TEI > Text Encoding Initiative -->
+                    <org xml:id="TEI" role="consortium">
+                        <orgName ref="">Text Encoding Initiative</orgName>
+                        <desc>
+                            La Text Encoding Initiative è un consorzio di istituzioni internazioanli,
+                            di ambito linguistico e letterario, che ha sviluppato uno standard
+                            per la rappresentazione digitale dei testi.
+                        </desc>
+                        <country type="nation" key="USA">Stati Uniti d'America</country>
+                    </org>
+                    <!-- UniPi > Università di Pisa -->
+                    <org xml:id="UniPi" role="institution">
+                        <orgName ref="https://www.unipi.it/">Università di Pisa</orgName>
+                        <desc>
+                            L'Università di Pisa è una delle più antiche e prestigiose Università
+                            in Italia e in Europa, è stata istituita nel 1343.
+                        </desc>
+                        <country type="nation" key="IT">Italia</country>
+                    </org>
+                    <!-- CDEC > Centro di documentazione ebraica contemporanea -->
+                    <org xml:id="CDEC" role="history institute">
+                        <orgName ref="https://">Centro di documentazione ebraica contemporanea</orgName>
+                        <desc>
+                            Il CDEC è un istituto storico culturale che promuove lo studio delle vicende storiche,
+                            della cultura e della realtà degli ebrei, con particolar riferimento all'Italia
+                            e all'età contemporanea.
+                        </desc>
+                        <country type="nation" key="IT">Italia</country>
+                    </org>
+                </listOrg>
+                <!-- Bibliografia -->
+                <listBibl>
+                    <bibl xml:lang="it" xml:id="b1">
+                        <author ref="#EA">
+                            <forename>Emanuele</forename>
+                            <surname>Artom</surname>
+                        </author>
+                        <editor ref="#PdB" role="curator"> 
+                            <forename>Paola</forename>
+                            <surname>De Benedetti</surname>
+                        </editor>
+                        <editor ref="#ER" role="curator"> 
+                            <forename>Eloisa</forename>
+                            <surname>Ravenna</surname>
+                        </editor>
+                        <title type="full">Diari</title>
+                        <title type="sub">Gennaio 1940 - febbraio 1944</title>
+                        <pubPlace>
+                            <placeName ref="#MI">Milano</placeName>
+                        </pubPlace>
+                        <date when="1996">1996</date>
+                        <publisher>
+                            <orgName ref="#CDEC">Centro di documentazione ebraica contemporanea</orgName>
+                        </publisher>
+                    </bibl>
+                    <bibl xml:lang="it" xml:id="b2">
+                        <author ref="#EA">
+                            <forename>Emanuele</forename>
+                            <surname>Artom</surname>
+                        </author>
+                        <editor ref="#GS" role="curator"> 
+                            <forename>Guri</forename>
+                            <surname>Schwarz</surname>
+                        </editor>
+                        <title type="full">Diari di un partigiano ebreo</title>
+                        <title type="sub">Gennaio 1940 - febbraio 1944</title>
+                        <pubPlace>
+                            <placeName ref="#TO">Torino</placeName>
+                        </pubPlace>
+                        <date when="2008">2008</date>
+                        <publisher>Bollati Boringhieri</publisher>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>  

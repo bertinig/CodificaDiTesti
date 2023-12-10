@@ -1,0 +1,353 @@
+/* CSS per il progetto di Codifica di Testi */
+
+/* Importo il font Montserrat di Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* palette di colori 
+#F1F1F2 overcast > bianco sporco
+#BCBABE warm gray > grigio chiaro
+#A1D6E2 ice > celestino
+#1995AD glacier blue > azzurro scuro */
+
+/* stile generale per il body */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F1F1F2;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+}
+
+/* stile per menu */
+ul.menu {
+    list-style-type: none;
+    position: fixed;
+    width: 99%;
+    top: 0;
+    margin: 0;
+    padding: 0; 
+    overflow: hidden;
+    background-color: #1995AD;
+}
+
+li {
+    float: left;
+}
+
+li a, .btnTendina {
+    display: inline-block;
+    color: #F1F1F2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .menuTendina:hover .btnTendina {
+    background-color: #A1D6E2;
+}
+
+li.menuTendina {
+    display: inline-block;
+}
+
+.tendina {
+    display: none;
+    position: fixed;
+    background-color: #A1D6E2;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.tendina a {
+    color: #f1f1f1;
+    padding: 12px 16px;
+    text-align: left;
+    display: block;
+    text-decoration: none;
+}
+
+.tendina a:hover {
+    background-color: #1995AD;
+}
+
+.menuTendina:hover .tendina {
+    display: block;
+}
+
+/* menu responsive */
+.respMenu {
+    display: none;
+    background-color: #1995AD;
+    position: relative;
+}
+
+#btnMenuResp {
+    background-color: #1995AD;
+    border: none;
+}
+
+img#apriMenu, img#chiudiMenu {
+    padding: 4px;
+}
+
+div.chiudi {
+    display: none;
+}
+
+#chiudiRespMenu {
+    display: none;
+    background-color: #1995AD;
+    color: #EBEBE8;
+    border: none;
+    padding: 12px;
+    margin-bottom: 4px;
+}
+
+.respMenu#respMenuTendina {
+    display: none;
+  }
+
+.respMenu a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.respMenu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.respMenuTendina {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    ul.menu {
+        display: none;
+    }
+    .respMenu {
+        display: block;
+    }
+}
+
+/* stile per main */
+.home {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 28px;
+}
+
+#immagine, #titolo {
+    flex: 50%;
+    padding: 20px;
+    margin: 50px;
+}
+
+#imgEA {
+    width: 50%;
+}
+
+h1 {
+    color: #1995AD;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+h2 {
+    color: #A1D6E2;
+    text-align: center;
+    margin: 0;
+    text-decoration: none;
+    margin-top: -25px;
+}
+
+.icon {
+    vertical-align: middle;
+}
+
+.nascondi1, .nascondi2, .nascondi3 {
+    display: none;
+}
+
+.titArt, .titPag {
+    margin-top: 50px;
+}
+
+article {
+    background-color: #BCBABE;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 4px;
+}
+
+h3 {
+    color: #1995AD;
+}
+
+#info {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 4px;
+    margin: 4px;
+}
+
+button#primoTit, button#secondoTit, button#terzoTit {
+    font-familY: Montserrat;
+    cursor: pointer;
+    background-color: #BCBABE;
+    border-style: none;
+}
+
+ul.noLista  {
+    list-style-type: none;
+    padding: 5px;
+    background-color: #F1F1F2;
+    border-radius: 25px;
+}
+
+ul.noLista li {
+    padding: 4px;
+    margin-left: 20px;
+    float: none;
+}
+
+#pag107, #pag108, #pag109 {
+    display: flex;
+    flex-direction: row;
+    padding: 28px;
+}
+
+#img107, #img108, #img109, .testoDiario {
+    flex: 50%;
+    padding: 20px;
+}
+
+.imgDiario {
+    width: 65%;
+    text-align: center;
+}
+
+/*area*/
+
+.rigaSelezionata {
+    color: #1995AD;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* Responsive layout */
+@media (max-width: 800px) {
+    .home, #pag107, #pag108, #pag109 {
+      flex-direction: column;
+    }
+    #imgEA, .imgDiario {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* stile per button */
+.listaBtn {
+    text-align: center;
+}
+
+button.styleBtn {
+    font-familY: Montserrat;
+    border: 2px solid #1995AD;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+}
+
+button:hover {
+    background-color: #1995AD;
+    color:#F1F1F2;
+}
+
+button.cancOn {
+    border: 2px solid #0823bf;
+}
+
+button.cancOn:hover {
+    background-color: #0823bf;
+}
+
+button.errOn {
+    border: 2px solid #fc685d;
+}
+
+button.errOn:hover {
+    background-color: #fc685d;
+}
+
+button.nonFormOn {
+    border: 2px solid #fce25d;
+}
+
+button.nonFormOn:hover {
+    background-color: #fce25d;
+}
+
+button.addOn {
+    border: 2px solid #029e2b;
+}
+
+button.addOn:hover {
+    background-color: #029e2b;
+}
+
+button.suppliedOn {
+    border: 2px solid #6c22d4;
+}
+
+button.suppliedOn:hover {
+    background-color: #6c22d4;
+}
+
+button.expanOn {
+    border: 2px solid #383838;
+}
+
+button.expanOn:hover {
+    background-color: #383838;
+}
+
+button.persOn {
+    border: 2px solid #faacf7;
+}
+
+button.persOn:hover {
+    background-color: #faacf7;
+}
+
+button.placeOn {
+    border: 2px solid #f5ab76;
+}
+
+button.placeOn:hover {
+    background-color: #f5ab76;
+}
+
+/* footer */
+footer {
+    margin-top: 50px;
+    padding: 4px;
+    width: 100%;
+    background-color: #1995AD;
+    color: #F1F1F2;
+}
