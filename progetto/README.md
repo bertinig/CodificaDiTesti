@@ -5,6 +5,7 @@ Il progetto è stato realizzato da Giulia Bertini per l'esame di Codifica di Tes
 ## Requisiti
 
 [Xerces 2.12.2](https://xerces.apache.org/mirrors.cgi) 
+
 [SaxonJ-HE 12.3](https://www.saxonica.com/download/java.xml)
 
 ## Comando per la validazione XML tramite Xerces
@@ -19,4 +20,5 @@ java -jar SaxonHE12-3J/saxon-he-12.3.jar -s:codifica.xml -xsl:stileCodifica.xsl 
 
 ## Image Map Resizer
 Il codice del file imageMapResizer.js è stato preso da [David J. Bradshaw](https://github.com/davidjbradshaw/image-map-resizer/tree/master). 
+
 Si tratta di una libreria che rende responsive un'immagine mappata in HTML.
