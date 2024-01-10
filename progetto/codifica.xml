@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE TEI SYSTEM "tei_all.dtd">
 <!-- 
     Filename: projCdT_Bertini.xml
@@ -6,11 +6,11 @@
     Date: 2023-10
 -->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-    <!-- <teiHeader> fornisce medatadi descrittivi e dichiarativi relativi a una risorsa o un insieme di risorse didigitali -->
+<!-- <teiHeader> fornisce medatadi descrittivi e dichiarativi relativi a una risorsa o un insieme di risorse digitali -->
     <teiHeader xml:lang="it">
-        <!-- <fileDesc> contiene la descrizione bibliografica di un file digitale -->
+    <!-- <fileDesc> contiene la descrizione bibliografica di un file digitale -->
         <fileDesc>
-            <!-- <titleStmt> è l'insieme delle info riguardo il titolo e i responsabili dell'opera -->
+        <!-- <titleStmt> è l'insieme delle info riguardo il titolo e i responsabili dell'opera -->
             <titleStmt>
                 <title level="m" type="main">Diari di Emanuele Artom</title>
                 <title type="sub">Trascrizione digitale delle pagine 107, 108 e 109</title>
@@ -49,7 +49,7 @@
                     <postCode>56127</postCode>
                     <name type="place">Italia</name>    
                 </address>
-                <availability status="free">Opera ad accesso libero</availability>
+                <availability status="free"><p>Opera ad accesso libero</p></availability>
                 <date when="2023-10">Ottobre 2023</date>
             </publicationStmt>
             <!-- <seriesStmt> omesso -->
@@ -72,16 +72,14 @@
                     <availability status="free">
                         <p>
                             Disponibile presso il 
-                            <institution ref="#CDEC">
-                                <orgName>
-                                    <choice>
-                                        <expan>Centro di Documentazione Ebraica Contemporanea</expan>
-                                        <abbr>CDEC</abbr>
-                                    </choice>
-                                </orgName>
-                            </institution>
+                            <orgName ref="#CDEC">
+                                <choice>
+                                    <expan>Centro di Documentazione Ebraica Contemporanea</expan>
+                                    <abbr>CDEC</abbr>
+                                </choice>
+                            </orgName>
                             , consultabile online.
-                            </p>
+                        </p>
                     </availability>
                 </bibl>
                 <msDesc>
@@ -96,22 +94,22 @@
                                 </choice>
                             </orgName>
                         </institution>
-                        <collection>Fondo Emanuele Artom</collection>
                         <repository>
                             <ptr target="http://digital-library.cdec.it/cdec-web/storico/detail/IT-CDEC-ST0003-000006/diari.html"/>
                             Emanuele Artom, Diari
                         </repository>
+                        <collection>Fondo Emanuele Artom</collection>
                         <idno>IT-CDEC-ST0003-000006 - busta 1, fascicolo 9</idno> <!-- identificatore-->
                     </msIdentifier>
                     <msContents>
-                        <msItems>
+                        <msItem>
                             <title level="m" type="main">Diari</title>
                             <author ref="#EA">Emanuele Artom</author>
                             <docDate>
                                 <date from="1943-11-30" to="1943-12-2">30 novembre 1943 - 2 dicembre 1943</date>
                             </docDate>
                             <textLang mainLang="it">Italiano</textLang>
-                        </msItems>
+                        </msItem>
                     </msContents>
                     <physDesc>
                         <objectDesc form="manuscirpt">
@@ -131,7 +129,7 @@
                             </supportDesc>
                             <layoutDesc>
                                 <layout columns="1" ruledLines="20 25">
-                                    <p>Le pagine del diario sono scritte su unìunica colonna 
+                                    <p>Le pagine del diario sono scritte su un'unica colonna 
                                     e generalmente presentano 20-25 righe ciascuna.</p>
                                 </layout>
                             </layoutDesc>
@@ -152,7 +150,7 @@
                                 Le pagine del diario sono stata scritte da <persName ref="#EA">Emanuele Artom</persName> 
                                 tra novembre 1943 fino a febbraio 1944 e riguardano la sua esperienza partigiana.
                                 Queste pagine sono state raccolte dalla madre, <persName ref="#AS">Amalia Segre</persName>,
-                                per il bisogno di ricordare o trasmettere le memorie del figlio.
+                                per il bisogno di ricordare e trasmettere le memorie del figlio.
                             </p>
                         </origin>
                         <acquisition>
@@ -160,7 +158,7 @@
                                 Alla morte della madre, come da lei chiesto nell'epigrafe, le pagine del diario sono state consegnate al 
                                 <orgName ref="#CDEC">Centro di Documentazione Ebraica Contemporanea</orgName>.
                                 Tutta la documentazione originale è stata ricondizionata e digitalizzata
-                                al fine di garantirne la consultabilità ai fini storici.
+                                per garantirne la consultabilità ai fini storici.
                             </p>
                         </acquisition>
                     </history>
@@ -174,21 +172,23 @@
                 <p>Edizione digitale realizzata per l'esame di Codifica di Testi.</p>
             </projectDesc>
             <!-- <editorialDecl> fornisce dettagli sui principi e sulle pratiche editoriali applicati nella codifica -->
-            <editorialDecl> <!-- AGGIUNGI TUTTE LE MODIFICHE -->
-                <correction method="" status="">
-                    <p>Gli errori presenti nel testo sono stati marcati </p>
+            <editorialDecl> 
+                <correction method="markup" status="high">
+                    <p>Gli errori presenti nel testo sono stati marcati tramite il tag <gi>sic</gi>,
+                    contenuto a sua volta nel tag <gi>choice</gi> insieme alla correzione presente nel tag <gi>corr</gi>.</p>
                 </correction>
-                <normalization method="">
-                    <p></p>
+                <normalization method="markup">
+                    <p>Le normalizzazioni sono state marcate utilizzando il tag <gi>orig</gi>, 
+                    all'interno del tag <gi>choice</gi> insieme alla forma normalizzata presente nel tag <gi>reg</gi>.</p>
                 </normalization>
-                <punctuation marks="" placement="">
-                    <p></p>
+                <punctuation marks="all" placement="internal">
+                    <p>Sono stati mantenuti i segni di punteggiatura originali.</p>
                 </punctuation>
-                <hyphenation eol="">
-                    <p></p>
+                <hyphenation eol="all">
+                    <p>La sillabazione nei ritorni a capo è stata mantenuta e segnalata attraverso l'attributo <att>break</att> dell'elemento <gi>lb</gi>.</p>
                 </hyphenation>
-                <quotation marks="">
-                    <p></p>
+                <quotation marks="all">
+                    <p>Eventuali virgolette presenti nel testo sono state mantenute. Sono state aggiunte quelle mancanti attraverso l'elemento <gi>supplied</gi>.</p>
                 </quotation>
             </editorialDecl>
             <refsDecl>
@@ -300,121 +300,120 @@
                     <!-- <pb> indica l'inizio di una pagina -->
                     <pb xml:id="p107" facs="#s107"/>
                     <!-- Riga 1, pag 107 -->
-                    <lb xml:id="1p107" facs="#p1r1" n="1" break="no"/>
+                    <lb xml:id="r1p107" facs="#p1r1" n="1" break="no"/>
                     si parlò della nostra questione e temo
                     <!-- Riga 2, pag 107 -->
-                    <lb xml:id="2p107" facs="#p1r2" n="2" break="no"/>
+                    <lb xml:id="r2p107" facs="#p1r2" n="2" break="no"/>
                     che la ragione sia almeno in parte 
                     <!-- Riga 3, pag 107 -->
-                    <lb xml:id="3p107" facs="#p1r3" n="3" break="no"/>
+                    <lb xml:id="r3p107" facs="#p1r3" n="3" break="no"/>
                     <del rend="overstrike">da</del> sua<pc type="colons">:</pc> rimproverava l<pc type="apostrophe">'</pc>inazione
                     <!-- Riga 4, pag 107 -->
-                    <lb xml:id="4p107" facs="#p1r4" n="4" break="yes"/>
+                    <lb xml:id="r4p107" facs="#p1r4" n="4" break="yes"/>
                     della banda e dice di aver pro<unclear reason="faded"><pc type="hyphenation">=</pc></unclear>
                     <!-- Riga 5, pag 107 -->
-                    <lb xml:id="5p107" facs="#p1r5" n="5" break="no"/>
-                    testato<pc type="period">.</pc> Poi accusò il povero <persName xml:id="#T">Toni</persName>
+                    <lb xml:id="r5p107" facs="#p1r5" n="5" break="no"/>
+                    testato<pc type="period">.</pc> Poi accusò il povero <persName ref="#T">Toni</persName>
                     <!-- Riga 6, pag 107 -->
-                    <lb xml:id="6p107" facs="#p1r6" n="6" break="no"/>
+                    <lb xml:id="r6p107" facs="#p1r6" n="6" break="no"/>
                     di aver rubato del burro e dovetti
                     <!-- Riga 7, pag 107 -->
-                    <lb xml:id="7p107" facs="#p1r7" n="7" break="no"/>
+                    <lb xml:id="r7p107" facs="#p1r7" n="7" break="no"/>
                     intervenire in sua difesa<pc type="comma">,</pc> 
                     <del>
                         <gap reason="illegible" quantity="4" unit="characyer"/>
                     </del> 
                     <del rend="overstrike">ho</del>
                     <!-- Riga 8, pag 107 -->
-                    <lb xml:id="8p107" facs="#p1r8" n="8" break="bo"/>
+                    <lb xml:id="r8p107" facs="#p1r8" n="8" break="no"/>
                     si nota ancora come questi elementi
                     <!-- Riga 9, pag 107 -->
-                    <lb xml:id="9p107" facs="#p1r9" n="9" break="no"/>
-                    comunisti<pc type="comma">,</pc> tipo <persName xml:id="#C">Cornera</persName><pc type="comma">,</pc> privi di
+                    <lb xml:id="r9p107" facs="#p1r9" n="9" break="no"/>
+                    comunisti<pc type="comma">,</pc> tipo <persName ref="#C">Cornera</persName><pc type="comma">,</pc> privi di
                     <!-- Riga 10, pag 107 -->
-                    <lb xml:id="10p107" facs="#p1r10" n="10" break="no"/>
+                    <lb xml:id="r10p107" facs="#p1r10" n="10" break="no"/>
                     educazione<pc type="comma">,</pc> sono meno benvoluti
                     <!-- Riga 11, pag 107 -->
-                    <lb xml:id="11p107" facs="#p1r11" n="11" break="no"/>
+                    <lb xml:id="r11p107" facs="#p1r11" n="11" break="no"/>
                     dai soldati di noi<pc type="comma">,</pc> tutti elementi
                     <!-- Riga 12, pag 107 -->
-                    <lb xml:id="12p107" facs="#p1r12" n="12" break="no"/>
+                    <lb xml:id="r12p107" facs="#p1r12" n="12" break="no"/>
                     su cui bisogna giocare<pc type="period">.</pc>
                     <!-- Riga 13, pag 107 -->
-                    <lb xml:id="13p107" facs="#p1r13" n="13" break="no"/>
+                    <lb xml:id="r13p107" facs="#p1r13" n="13" break="no"/>
                     <choice>
                         <orig>Stamane</orig>
                         <reg resp="#GB">Stamani</reg>
                     </choice><pc type="comma">,</pc> svegliandomi in una
                     <!-- Riga 14, pag 107 -->
-                    <lb xml:id="14p107" facs="#p1r14" n="14" break="no"/>
+                    <lb xml:id="r14p107" facs="#p1r14" n="14" break="no"/>
                     stalla<pc type="comma">,</pc> dissi a
                     <persName ref="#GS">    
                         <choice><abbr>G</abbr><expan cert="high" resp="#GB"><name>Giorgio</name></expan></choice>
                     </persName><pc type="colons" force="strong">:</pc>
                     <supplied reason="omitted-in-original" resp="#GB">"</supplied>Strano<pc type="comma">,</pc> per 
                     <!-- Riga 15, pag 107 -->
-                    <lb xml:id="15p107" facs="#p1r15" n="15" break="no"/>
+                    <lb xml:id="r15p107" facs="#p1r15" n="15" break="no"/>
                     tre giorni <del rend="overstrike">almeno</del> sappiamo che
                     <!-- Riga 16, pag 107 -->
-                    <lb xml:id="16p107" facs="#p1r16" n="16" break="no"/>
+                    <lb xml:id="r16p107" facs="#p1r16" n="16" break="no"/>
                     cosa faremo<pc type="period">.</pc> Oggi a 
                     <placeName ref="#B">
                         <settlement><choice><abbr type="grographic"><name type="place">B</name></abbr><expan cert="high" resp="#GB">Barge</expan></choice></settlement></placeName>, domani 
-                    <gap>
-                        <supplied reason="illegible" resp="#GB">
-                            e
-                        </supplied>
-                    </gap>
+                    <gap quantity="1" unit="chars" reason="illegible"/>
+                    <supplied reason="illegible" resp="#GB">
+                        e
+                    </supplied>
                     <!-- Riga 17, pag 107 -->
-                    <lb xml:id="17p107" facs="#p1r17" n="17" break="no"/>
+                    <lb xml:id="r17p107" facs="#p1r17" n="17" break="no"/>
                     dopodomani a discutere a 
                     <placeName ref="#TP"><settlement><choice><abbr type="acronym">T<pc type="period" force="weak">.</pc>P<pc type="period" force="weak">.</pc></abbr><expan cert="high" resp="#GB"><name type="place">Torre Pellice</name></expan></choice></settlement></placeName><supplied reason="omitted-in-original" resp="#GB">"</supplied> 
                     <!-- Riga 18, pag 107 -->
-                    <lb xml:id="18p107" facs="#p1r18" n="18" break="no"/>
+                    <lb xml:id="r18p107" facs="#p1r18" n="18" break="no"/>
                     Ma probabilmente sbagliavo il
                     <!-- Riga 19, pag 107 -->
-                    <lb xml:id="19p107" facs="#p1r19" n="19" break="no"/>
+                    <lb xml:id="r19p107" facs="#p1r19" n="19" break="no"/>
                     conto<choice><sic><pc type="comma">,</pc></sic><corr resp="#GB"><pc type="period">.</pc></corr></choice>
                      I nazisti hanno attaccato 
                     <!-- Riga 20, pag 107 -->
-                    <lb xml:id="20p107" facs="#p1r20" n="20" break="no"/>
+                    <lb xml:id="r20p107" facs="#p1r20" n="20" break="no"/>
                     le bande di 
                     <placeName ref="#Bag"><settlement>Bagnolo</settlement></placeName><pc type="period">.</pc> Si vedono
                     <!-- Riga 21, pag 107 -->
-                    <lb xml:id="21p107" facs="#p1r21" n="21" break="no"/>
+                    <lb xml:id="r21p107" facs="#p1r21" n="21" break="no"/>
                     molti incenti per tutta la valle
                     <!-- Riga 22, pag 107 -->
-                    <lb xml:id="22p107" facs="#p1r22" n="22" break="no"/>
+                    <lb xml:id="r22p107" facs="#p1r22" n="22" break="no"/>
                     con i pennacchi di fumo e nel cielo
                 </ab>
                 <!-- Inizio pagina 108 -->
                 <ab type="page" xml:lang="it" n="108">
                     <pb xml:id="p108" facs="#s108"/>
                     <!-- Riga 1, pag 108 -->
-                    <lb xml:id="1p108" facs="#p2r1" n="1" break="no"/>
+                    <lb xml:id="r1p108" facs="#p2r1" n="1" break="no"/>
                     una <del rend="overstrike">grande</del> larga nuvola 
                     <choice>
                         <sic>grigià</sic>
                         <corr resp="#GB">grigia</corr>
                     </choice><pc type="comma">.</pc> 
                     <!-- Riga 2, pag 108 -->
-                    <lb xml:id="2p108" facs="#p2r2" n="2" break="yes"/>
+                    <lb xml:id="r2p108" facs="#p2r2" n="2" break="yes"/>
                     Siccome la strada automobili<unclear reason="faded"><pc type="hyphenation">=</pc></unclear>
                     <!-- Riga 3, pag 108 -->
-                    <lb xml:id="3p108" facs="#p2r3" n="3" break="no"/>
+                    <lb xml:id="r3p108" facs="#p2r3" n="3" break="no"/>
                     stica giunge fino al 
                     <placeName ref="#M"><settlement type="village">Montoso</settlement></placeName><pc type="comma">,</pc>
                     <!-- Riga 4, pag 108 -->
-                    <lb xml:id="4p108" facs="#p2r4" n="4" break="no"/>
+                    <lb xml:id="r4p108" facs="#p2r4" n="4" break="no"/>
                     i nemici <del rend="overstrike">ha</del> l<pc type="apostrophe">'</pc>avranno risalita 
                     <!-- Riga 5, pag 108 -->
-                    <lb xml:id="5p108" facs="#p2r5" n="5" break="no"/>
+                    <lb xml:id="r5p108" facs="#p2r5" n="5" break="no"/>
                     compiendo grandi distruzioni<pc type="period">.</pc>
                     <!-- Riga 6, pag 108 -->
-                    <lb xml:id="6p108" facs="#p2r6" n="6" break="yes"/>
+                    <lb xml:id="r6p108" facs="#p2r6" n="6" break="yes"/>
                     Corre voce che abbiano anche as<unclear reason="faded"><pc type="hyphenation">=</pc></unclear>
                     <!-- Riga 7, pag 108 -->
-                    <lb xml:id="7p108" facs="#p2r7" n="7" break="no"/>
+                    <lb xml:id="r7p108" facs="#p2r7" n="7" break="no"/>
                     salito 
                     <placeName ref="#A"><settlement type="village">Agliasco</settlement></placeName><pc type="semicolon">;</pc> 
                     <del rend="overstrike">
@@ -422,17 +421,17 @@
                     </del> 
                     <persName ref="Z">Zama</persName> ha
                     <!-- Riga 8, pag 108 -->
-                    <lb xml:id="8p108" facs="#p2r8" n="8" break="no"/>
+                    <lb xml:id="r8p108" facs="#p2r8" n="8" break="no"/>
                     minato la strada e dei 
                     <choice>
                         <orig>Tedeschi</orig>
                         <reg resp="#GB">tedeschi</reg>
                     </choice>
                     <!-- Riga 9, pag 108 -->
-                    <lb xml:id="9p108" facs="#p2r9" n="9" break="no"/>
+                    <lb xml:id="r9p108" facs="#p2r9" n="9" break="no"/>
                     si farà una strage<pc type="comma">,</pc> tutte le vie
                     <!-- Riga 10, pag 108 -->
-                    <lb xml:id="10p108" facs="#p2r10" n="10" break="no"/>
+                    <lb xml:id="r10p108" facs="#p2r10" n="10" break="no"/>
                     intorno a 
                     <placeName ref="#B">
                         <settlement type="village"> 
@@ -441,7 +440,7 @@
                     </placeName> 
                     sono bloccate
                     <!-- Riga 11, pag 108 -->
-                    <lb xml:id="11p108" facs="#p2r11" n="11" break="no"/>
+                    <lb xml:id="r11p108" facs="#p2r11" n="11" break="no"/>
                     dalla 
                     <choice>
                         <orig>Milizia</orig>
@@ -449,62 +448,62 @@
                     </choice>
                     <unclear reason="faded"> e</unclear> gli aeroplani
                     <!-- Riga 12, pag 108 -->
-                    <lb xml:id="12p108" facs="#p2r12" n="12" break="no"/>
+                    <lb xml:id="r12p108" facs="#p2r12" n="12" break="no"/>
                     volteggiano di continuo bassi
                     <!-- Riga 13, pag 108 -->
-                    <lb xml:id="13p108" facs="#p2r13" n="13" break="no"/>
+                    <lb xml:id="r13p108" facs="#p2r13" n="13" break="no"/>
                     su di noi<pc type="period">.</pc> Stare qui nella scala
                     <!-- Riga 14, pag 108 -->
-                    <lb xml:id="14p108" facs="#p2r14" n="14" break="no"/>
+                    <lb xml:id="r14p108" facs="#p2r14" n="14" break="no"/>
                     di legno dell<pc type="aphostrophe">'</pc>i<gap quantity="1" unit="chars" reason="inaudible"/><supplied reason="faded-ink" resp="#GB">n</supplied>fermeria a scrivere
                     <!-- Riga 15, pag 108 -->
-                    <lb xml:id="15p108" facs="#p2r15" n="15" break="no"/>
+                    <lb xml:id="r15p108" facs="#p2r15" n="15" break="no"/>
                     tranquillo mentre aspetto il
                     <!-- Riga 16, pag 108 -->
-                    <lb xml:id="16p108" facs="#p2r16" n="16" break="no"/>
+                    <lb xml:id="r16p108" facs="#p2r16" n="16" break="no"/>
                     pranzo mi pare quasi ridicolo<pc type="comma">,</pc>
                     <!-- Riga 17, pag 108 -->
-                    <lb xml:id="17p108" facs="#p2r17" n="17" break="no"/>
+                    <lb xml:id="r17p108" facs="#p2r17" n="17" break="no"/>
                     mentre siamo in battaglia<pc type="comma">,</pc>
                     <!-- Riga 18, pag 108 -->
-                    <lb xml:id="18p108" facs="#p2r18" n="18" break="no"/>
+                    <lb xml:id="r18p108" facs="#p2r18" n="18" break="no"/>
                     ma 
                     <del rend="overstrike">
                         <gap quantity="3" unit="chars" reason="illegible"/>
                     </del> 
                     la redazione di questo
                     <!-- Riga 19, pag 108 -->
-                    <lb xml:id="19p108" facs="#p2r19" n="19" break="no"/>
+                    <lb xml:id="r19p108" facs="#p2r19" n="19" break="no"/>
                     diario <unclear reason="faded">è</unclear> la mia unica attività
                     <!-- Riga 20, pag 108 -->
-                    <lb xml:id="20p108" facs="#p2r20" n="20" break="no"/>
+                    <lb xml:id="r20p108" facs="#p2r20" n="20" break="no"/>
                     intellettuale e non voglio 
                     <choice>
                         <orig>rinunziarvi</orig>
                         <reg resp="#GB">rinunciarvi</reg>
                     </choice><pc type="comma">,</pc>
                     <!-- Riga 21, pag 108 -->
-                    <lb xml:id="21p108" facs="#p2r21" n="21" break="no"/>
+                    <lb xml:id="r21p108" facs="#p2r21" n="21" break="no"/>
                     d<pc type="apostrophe">'</pc>altra parte fra qualche 
                     t<gap quantity="1" unit="chars" reason="inaudible"/><supplied reason="faded-ink" resp="#GB">e</supplied>mpo
                     <!-- Riga 22, pag 108 -->
-                    <lb xml:id="22p108" facs="#p2r22" n="22" break="no"/>
+                    <lb xml:id="r22p108" facs="#p2r22" n="22" break="no"/>
                     sarà bello rileggere queste orribili
                 </ab>
                 <!-- Inizio pagina 109 -->
                 <ab type="page" xml:lang="it" n="109">
                     <pb xml:id="p109" facs="#s109"/>
                     <!-- Riga 1, pag 109 -->
-                    <lb xml:id="1p109" facs="#p3r1" n="1" break="no"/>
+                    <lb xml:id="r1p109" facs="#p3r1" n="1" break="no"/>
                     <date>
                         <num>28</num>
                         <gap reason="omitted"/>
                     </date><pc type="period">.</pc>
                     <!-- Riga 2, pag 109 -->
-                    <lb xml:id="2p109" facs="#p3r2" n="2" break="no"/>
+                    <lb xml:id="r2p109" facs="#p3r2" n="2" break="no"/>
                     Ieri non ebbi tempo di scrivere<pc type="period">.</pc>
                     <!-- Riga 3, pag 109 -->
-                    <lb xml:id="3p109" facs="#p3r3" n="3" break="no"/>
+                    <lb xml:id="r3p109" facs="#p3r3" n="3" break="no"/>
                     <del rend="overstike">Dopo aver</del> 
                     <choice>
                         <sic>dormito</sic>
@@ -512,10 +511,10 @@
                     </choice>
                     male tutta
                     <!-- Riga 4, pag 109 -->
-                    <lb xml:id="4p109" facs="#p3r4" n="4" break="no"/>
+                    <lb xml:id="r4p109" facs="#p3r4" n="4" break="no"/>
                     la notte<pc type="comma">,</pc> vicino a <persName ref="#P">Peru</persName><pc type="comma">,</pc> che alle
                     <!-- Riga 5, pag 109 -->
-                    <lb xml:id="5p109" facs="#p3r5" n="5" break="yes"/>
+                    <lb xml:id="r5p109" facs="#p3r5" n="5" break="yes"/>
                     <time when="17:30">
                         <num type="cardinal" value="17">5</num> 
                         e <num value="30">mezza</num>
@@ -525,62 +524,61 @@
                     </add>
                      aveva già prepa<pc type="hyphenation">=</pc>
                     <!-- Riga 6, pag 109 -->
-                    <lb xml:id="6p109" facs="#p3r6" n="6" break="yes"/>
+                    <lb xml:id="r6p109" facs="#p3r6" n="6" break="yes"/>
                     rato la cena e voleva subito par<pc type="hyphenation">=</pc>
                     <!-- Riga 7, pag 109 -->
-                    <lb xml:id="7p109" facs="#p3r7" n="7" break="no"/>
+                    <lb xml:id="r7p109" facs="#p3r7" n="7" break="no"/>
                     tire 
                     <add place="above" hand="#EA">
                         tanto temeva la notte
                     </add>
                     <pc type="period">.</pc> Ho detto che ha paura dei
                     <!-- Riga 8, pag 109 -->
-                    <lb xml:id="8p109" facs="#p3r8" n="8" break="no"/>
+                    <lb xml:id="r8p109" facs="#p3r8" n="8" break="no"/>
                     <choice>
-                        <sic><abbr>Ted</abbr></sic>
-                        <corr resp="#GB"><expan>tedeschi</expan></corr>
-                    <pc type="comma">,</pc>
+                        <sic><abbr>Ted<pc type="comma">,</pc></abbr></sic>
+                        <corr resp="#GB"><expan>tedeschi<pc type="comma">,</pc></expan></corr>
                     </choice>
                      ma ancora di più dell<pc type="apostrophe">'</pc>acqua<pc type="period">.</pc>
                     <!-- Riga 9, pag 109 -->
-                    <lb xml:id="9p109" facs="#p3r9" n="9" break="no"/>
+                    <lb xml:id="r9p109" facs="#p3r9" n="9" break="no"/>
                     Non
                     <choice> 
                         <sic>glie l<pc type="apostrophe">'</pc></sic>
                         <corr resp="#GB">gliel<pc type="apostrophe">'</pc></corr>
                     </choice>ho mai vista toccare
                     <!-- Riga 10, pag 109 -->
-                    <lb xml:id="10p109" facs="#p3r10" n="10" break="no"/>
+                    <lb xml:id="r10p109" facs="#p3r10" n="10" break="no"/>
                     salvo in un<pc type="apostrophe">'</pc>occasione<pc type="comma">,</pc> quando 
                     <!-- Riga 11, pag 109 -->
-                    <lb xml:id="11p109" facs="#p3r11" n="11" break="no"/>
+                    <lb xml:id="r11p109" facs="#p3r11" n="11" break="no"/>
                     porta un bicchiere pieno <del rend="overstrike">per</del>
                     <add place="above" hand="#EA">
                         d<pc type="apostrophe">'</pc>acqua da bere
                     </add>
                     <!-- Riga 12, pag 109 -->
-                    <lb xml:id="12p109" facs="#p3r12" n="12" break="no"/>
+                    <lb xml:id="r12p109" facs="#p3r12" n="12" break="no"/>
                     <del rend="overstike">bere<pc type="period">.</pc></del> Allora mentre lo tiene con 
                     <!-- Riga 13, pag 109 -->
-                    <lb xml:id="13p109" facs="#p3r13" n="13" break="yes,"/>
+                    <lb xml:id="r13p109" facs="#p3r13" n="13" break="yes"/>
                     il resto della mano<pc type="comma">,</pc> 
                     <del rend="overstrike">infila</del> 
                     <add place="above" hand="#EA">ma immerge</add>
                      co<pc type="hyphenation">=</pc>
                     <!-- Riga 14, pag 109 -->
-                    <lb xml:id="14p109" facs="#p3r14" n="14" break="no"/>
+                    <lb xml:id="r14p109" facs="#p3r14" n="14" break="no"/>
                     raggiosamente l<pc type="apostrophe">'</pc>indice fino 
                     <!-- Riga 15, pag 109 -->
-                    <lb xml:id="15p109" facs="#p3r15" n="15" break="no"/>
+                    <lb xml:id="r15p109" facs="#p3r15" n="15" break="no"/>
                     nel fondo<pc type="period">.</pc> La sua è una 
                     <!-- Riga 16, pag 109 -->
-                    <lb xml:id="16p109" facs="#p3r16" n="16" break="yes"/>
+                    <lb xml:id="r16p109" facs="#p3r16" n="16" break="yes"/>
                     sporcizia che un filosofo po<pc type="hyphenation">=</pc>
                     <!-- Riga 17, pag 109 -->
-                    <lb xml:id="17p109" facs="#p3r17" n="17" break="no"/>
+                    <lb xml:id="r17p109" facs="#p3r17" n="17" break="no"/>
                     trebbe chiamare trascendente
                     <!-- Riga 18, pag 109 -->
-                    <lb xml:id="18p109" facs="#p3r18" n="18" break="no"/>
+                    <lb xml:id="r18p109" facs="#p3r18" n="18" break="no"/>
                     <del rend="overstrike">e metafisica<pc type="comma">,</pc></del> 
                     <choice>
                         <sic>perchè</sic>
@@ -588,16 +586,16 @@
                     </choice>
                      pare che
                     <!-- Riga 19, pag 109 -->
-                    <lb xml:id="19p109" facs="#p3r19" n="19" break="no"/>
+                    <lb xml:id="r19p109" facs="#p3r19" n="19" break="no"/>
                     anche se si lavasse tutta una
                     <!-- Riga 20, pag 109 -->
-                    <lb xml:id="20p109" facs="#p3r20" n="20" break="no"/>
+                    <lb xml:id="r20p109" facs="#p3r20" n="20" break="no"/>
                     settimana parrebbe sporco
                     <!-- Riga 21, pag 109 -->
-                    <lb xml:id="21p109" facs="#p3r21" n="21" break="no"/>
+                    <lb xml:id="r21p109" facs="#p3r21" n="21" break="no"/>
                     lo stesso<pc type="comma">,</pc> tanto è impregnato
                     <!-- Riga 22, pag 109 -->
-                    <lb xml:id="22p109" facs="#p3r22" n="22" break="no"/>
+                    <lb xml:id="r22p109" facs="#p3r22" n="22" break="no"/>
                     dopo <num type="cardinal" value="28">ventotto</num> anni di sudiciume<pc type="comma">.</pc>
                 </ab>
             </div>
@@ -929,4 +927,4 @@
             </div>
         </back>
     </text>
-</TEI>  
+</TEI>

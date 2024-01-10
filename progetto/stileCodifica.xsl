@@ -56,7 +56,6 @@
                     </div>
                 </div>
             </header>
-            <!-- qui potremmo inserire dei bottoni per conservazione, dettagli e desc fisica -->
             <main id="content">
                 <!-- inizio home -->
                 <div class="home">
@@ -71,7 +70,7 @@
                 <!-- inizio biografia -->
                 <div id="bio">
                     <h2 class="titArt">Biografia</h2>
-                    <article id="art">
+                    <article class="art">
                         <p>Emanuele Artom nasce ad Aosta il 23 giugno 1915, figlio di Emilio ed Amalia Segre. Tra i collaboratori del grande Dizionario enciclopedico Utet già dal 1935, nel novembre 1937 ottiene la laurea in lettere presso l'Università di Torino e, sempre nel 1937, in collaborazione con Guido Bonfiglioli pubblica il volume "Elena o della Parodia". 
                         Qualche anno dopo, nel 1941 pubblica la prima edizione dei "Principi di storia e cultura ebraica", in seguito più volte ristampato. Antifascista, nel maggio 1943 Artom si iscrive al Partito d'Azione. Dopo l'armistizio, con il nome di Eugenio Ansaldi, si arruola tra i partigiani come delegato azionista in una brigata garibaldina di Barge. 
                         In seguito viene nominato commissario politico delle bande "Italia Libera" operanti in Val Pellice e Val Germanasca. Catturato dai fascisti nel marzo 1944, Artom viene consegnato ai tedeschi e rinchiuso nelle Carceri Nuove di Torino, dove il 7 aprile 1944 muore a causa delle torture inflittegli.</p>
@@ -80,7 +79,7 @@
                 <!-- inizio descrizione -->
                 <div id="desc">
                     <h2 class="titArt">Descrizione</h2>
-                    <article id="art">
+                    <article class="art">
                         <div id="dettagli">
                             <button id="primoTit">
                                 <h3>Dettagli <img src="img/frecciaGiu.png" alt="freccia giù" class="mostra1 icon"/> 
@@ -88,10 +87,10 @@
                             </button>          
                             <div id="nascostoUno">
                                 <ul class="noLista">
-                                    <li>Titolo: <xsl:value-of select="tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItems/tei:title"/></li>
-                                    <li>Autore: <xsl:value-of select="tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItems/tei:author"/></li>
-                                    <li>Data: <xsl:value-of select="tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItems/tei:docDate/tei:date"/></li>
-                                    <li>Lingua: <xsl:value-of select="tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItems/tei:textLang"/></li>
+                                    <li>Titolo: <xsl:value-of select="tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItem/tei:title"/></li>
+                                    <li>Autore: <xsl:value-of select="tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItem/tei:author"/></li>
+                                    <li>Data: <xsl:value-of select="tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItem/tei:docDate/tei:date"/></li>
+                                    <li>Lingua: <xsl:value-of select="tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:msContents/tei:msItem/tei:textLang"/></li>
                                     <li>Storia editoriale: <xsl:value-of select="tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:history/tei:origin"/></li>
                                     <li>Acquisizione: <xsl:value-of select="tei:TEI/tei:teiHeader/tei:fileDesc/tei:sourceDesc/tei:msDesc/tei:history/tei:acquisition"/></li>
                                 </ul>
@@ -144,17 +143,15 @@
                         </div>
                     </div>
                     <!-- spiegazione dei bottoni -->
-                    <div id="spiegaz" class="testo">
-                        <article id="info">
+                    <div class="testo">
+                        <article class="info">
                             <p>
                                 Cliccando sui bottoni sarà possibile vedere le modifiche apportate nella trascrizione digitale del testo rispetto alla pagina originale del diario.
                             </p>
                         </article>
                     </div>
                     <!-- lista bottoni -->
-                    <div id="bottoni" class="listaBtn">
-                        <!-- qui potrei inserire una breve descrizione di come funziona 
-                        e di cosa vedranno a seconda del bottone -->
+                    <div class="listaBtn">
                         <button type="button" id="btnCanc7" class="styleBtn">Cancellature</button>
                         <button type="button" id="btnErr7" class="styleBtn">Errori</button>
                         <button type="button" id="btnNonForm7" class="styleBtn">Forma non normalizzata</button>
@@ -181,17 +178,15 @@
                         </div>
                     </div>
                     <!-- spiegazione dei bottoni -->
-                    <div id="spiegaz" class="testo">
-                        <article id="info">
+                    <div class="testo">
+                        <article class="info">
                             <p>
                                 Cliccando sui bottoni sarà possibile vedere le modifiche apportate nella trascrizione digitale del testo rispetto alla pagina originale del diario.
                             </p>
                         </article>
                     </div>
                     <!-- lista bottoni -->
-                    <div id="bottoni" class="listaBtn">
-                        <!-- qui potrei inserire una breve descrizione di come funziona 
-                        e di cosa vedranno a seconda del bottone -->
+                    <div class="listaBtn">
                         <button type="button" id="btnCanc8" class="styleBtn">Cancellature</button>
                         <button type="button" id="btnErr8" class="styleBtn">Errori</button>
                         <button type="button" id="btnNonForm8" class="styleBtn">Forma non normalizzata</button>
@@ -218,17 +213,15 @@
                         </div>
                     </div>
                     <!-- spiegazione dei bottoni -->
-                    <div id="spiegaz" class="testo">
-                        <article id="info">
+                    <div class="testo">
+                        <article class="info">
                             <p>
                                 Cliccando sui bottoni sarà possibile vedere le modifiche apportate nella trascrizione digitale del testo rispetto alla pagina originale del diario.
                             </p>
                         </article>
                     </div>
                     <!-- lista bottoni -->
-                    <div id="bottoni" class="listaBtn">
-                        <!-- qui potrei inserire una breve descrizione di come funziona 
-                        e di cosa vedranno a seconda del bottone -->
+                    <div class="listaBtn">
                         <button type="button" id="btnCanc9" class="styleBtn">Cancellature</button>
                         <button type="button" id="btnErr9" class="styleBtn">Errori</button>
                         <button type="button" id="btnNonForm9" class="styleBtn">Forma non normalizzata</button>
@@ -242,7 +235,6 @@
             </main>     
             <footer id="about">
                 <div id="footer">
-                    <!-- da inserire dati che solitamente vanno nel footer -->
                     <p><xsl:value-of select="tei:TEI/tei:teiHeader/tei:fileDesc/tei:editionStmt/tei:edition"/></p>
                     <p><xsl:value-of select="tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt//tei:respStmt"/></p>
                     <p><xsl:value-of select="tei:TEI/tei:teiHeader/tei:fileDesc/tei:editionStmt/tei:respStmt"/></p>
