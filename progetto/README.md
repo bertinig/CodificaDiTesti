@@ -13,7 +13,7 @@ Il progetto è stato realizzato da Giulia Bertini per l'esame di Codifica di Tes
 java -cp "xerces_2-12-2/*" dom.Counter -v codifica.xml
 ```
 
-## Comando per la generazione del documento HTML di output tramite il processore XSLT Saxomn
+## Comando per la generazione del documento HTML di output tramite il processore XSLT Saxon
 ```
 java -jar SaxonHE12-3J/saxon-he-12.3.jar -s:codifica.xml -xsl:stileCodifica.xsl -o:index.html
 ```
